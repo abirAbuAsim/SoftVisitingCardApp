@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\absak\\.android\\build-cache\\c46b1a218de6069cada6e14feebea55a3311d3f6\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
-    },
-    {
         "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\orange_shape.png",
         "source": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\src\\main\\res\\drawable\\orange_shape.png"
+    },
+    {
+        "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\absak\\.android\\build-cache\\c46b1a218de6069cada6e14feebea55a3311d3f6\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
         "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
@@ -38,6 +38,10 @@
     {
         "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
         "source": "C:\\Users\\absak\\.android\\build-cache\\c46b1a218de6069cada6e14feebea55a3311d3f6\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dev_woman.png",
+        "source": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\src\\main\\res\\drawable\\dev_woman.png"
     },
     {
         "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",

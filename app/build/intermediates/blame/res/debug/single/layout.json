@@ -64,6 +64,10 @@
         "source": "C:\\Users\\absak\\.android\\build-cache\\c46b1a218de6069cada6e14feebea55a3311d3f6\\output\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
+        "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_linked_people.xml",
+        "source": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\src\\main\\res\\layout\\activity_linked_people.xml"
+    },
+    {
         "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
         "source": "C:\\Users\\absak\\.android\\build-cache\\c46b1a218de6069cada6e14feebea55a3311d3f6\\output\\res\\layout\\abc_action_mode_bar.xml"
     },
@@ -112,6 +116,10 @@
         "source": "C:\\Users\\absak\\.android\\build-cache\\c46b1a218de6069cada6e14feebea55a3311d3f6\\output\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
+        "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_create.xml",
+        "source": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\src\\main\\res\\layout\\activity_create.xml"
+    },
+    {
         "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
         "source": "C:\\Users\\absak\\.android\\build-cache\\c46b1a218de6069cada6e14feebea55a3311d3f6\\output\\res\\layout\\abc_action_bar_title_item.xml"
     },
@@ -140,8 +148,16 @@
         "source": "C:\\Users\\absak\\.android\\build-cache\\c46b1a218de6069cada6e14feebea55a3311d3f6\\output\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
+        "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_card_gallery.xml",
+        "source": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\src\\main\\res\\layout\\activity_card_gallery.xml"
+    },
+    {
         "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
         "source": "C:\\Users\\absak\\.android\\build-cache\\c46b1a218de6069cada6e14feebea55a3311d3f6\\output\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_about_us.xml",
+        "source": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\src\\main\\res\\layout\\activity_about_us.xml"
     },
     {
         "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",

@@ -26,6 +26,46 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.android.softvisitingcardapp.CardGalleryActivity"
+            android:label="Card Gallery"
+            android:parentActivityName="com.example.android.softvisitingcardapp.MainActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.android.softvisitingcardapp.LinkedPeopleActivity"
+            android:label="Linked People"
+            android:parentActivityName="com.example.android.softvisitingcardapp.MainActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.android.softvisitingcardapp.CreateActivity"
+            android:label="Create Card"
+            android:parentActivityName="com.example.android.softvisitingcardapp.MainActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.android.softvisitingcardapp.AboutUsActivity"
+            android:label="About Us"
+            android:parentActivityName="com.example.android.softvisitingcardapp.MainActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>
