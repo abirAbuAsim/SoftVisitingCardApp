@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the Create Card View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent menuIntent = new Intent(MainActivity.this, CreateActivity.class);
+                Intent menuIntent = new Intent(MainActivity.this, SelectDesignActivity.class);
                 startActivity(menuIntent);
             }
         });

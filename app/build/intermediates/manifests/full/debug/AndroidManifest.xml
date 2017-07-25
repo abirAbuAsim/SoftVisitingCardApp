@@ -8,6 +8,9 @@
         android:minSdkVersion="15"
         android:targetSdkVersion="25" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <meta-data
         android:name="android.support.VERSION"
         android:value="25.3.1" />
@@ -66,6 +69,27 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+        <activity
+            android:name="com.example.android.softvisitingcardapp.SelectDesignActivity"
+            android:label="Select Design"
+            android:parentActivityName="com.example.android.softvisitingcardapp.MainActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.android.softvisitingcardapp.PreviewDesignActivity"
+            android:label="Preview Design"
+            android:parentActivityName="com.example.android.softvisitingcardapp.SelectDesignActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SelectDesignActivity" />
+        </activity>
+        <activity android:name="com.example.android.softvisitingcardapp.TestActivity" />
     </application>
 
 </manifest>

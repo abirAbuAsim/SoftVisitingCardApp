@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Soft Visiting Card App</string>
+    <string name="action_save">Save</string>
 </resources>
