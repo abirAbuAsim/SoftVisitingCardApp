@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the Linked People View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent menuIntent = new Intent(MainActivity.this, LinkedPeopleActivity.class);
-                startActivity(menuIntent);
+                Intent linkedPeopleIntent = new Intent(MainActivity.this, LinkedPeopleActivity.class);
+                startActivity(linkedPeopleIntent);
             }
         });
 

@@ -64,6 +64,10 @@
         "source": "C:\\Users\\absak\\.android\\build-cache\\c46b1a218de6069cada6e14feebea55a3311d3f6\\output\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
+        "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item.xml",
+        "source": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\src\\main\\res\\layout\\list_item.xml"
+    },
+    {
         "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
         "source": "C:\\Users\\absak\\.android\\build-cache\\c46b1a218de6069cada6e14feebea55a3311d3f6\\output\\res\\layout\\abc_action_bar_title_item.xml"
     },
@@ -190,6 +194,10 @@
     {
         "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
         "source": "C:\\Users\\absak\\.android\\build-cache\\c46b1a218de6069cada6e14feebea55a3311d3f6\\output\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\linked_people_list.xml",
+        "source": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\src\\main\\res\\layout\\linked_people_list.xml"
     },
     {
         "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
