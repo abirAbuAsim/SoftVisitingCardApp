@@ -93,6 +93,7 @@
         </activity>
         <activity android:name="com.example.android.softvisitingcardapp.TestActivity" />
         <activity android:name="com.example.android.softvisitingcardapp.testfragment.TestFragmentActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.authentication.UserProfileActivity" />
     </application>
 
 </manifest>
