@@ -9,7 +9,6 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -20,9 +19,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -30,15 +29,19 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-import static android.R.attr.name;
-import static android.R.attr.password;
-import static android.R.attr.type;
+import okhttp3.MediaType;
+import okhttp3.MultipartBody;
+import okhttp3.RequestBody;
+import retrofit2.Call;
+import retrofit2.Callback;
 
 public class CreateActivity extends AppCompatActivity {
     EditText nameEditText, companyNameEditText, designationEditText, addressEditText,
             websiteEditText, emailEditText, mobileNumberEditText;
     String name, companyName, designation, address, website, email, mobileNumber;
     private ImageView logoImage;
+    String mediaPath;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -211,22 +214,6 @@ public class CreateActivity extends AppCompatActivity {
     }
 
 
-    public void onRegister(View view){
-        name = nameEditText.getText().toString();
-        email = emailEditText.getText().toString();
-        companyName = companyNameEditText.getText().toString();
-        designation = designationEditText.getText().toString();
-        address = addressEditText.getText().toString();
-        mobileNumber = mobileNumberEditText.getText().toString();
-        website = websiteEditText.getText().toString();
-
-        String type = "register";
-        BackgroundWorker backgroundWorker = new BackgroundWorker(this);
-        backgroundWorker.execute(type, name, email, companyName,
-                                designation, address, mobileNumber, website);
-    }
-
-
     private void selectImage() {
         final CharSequence[] options = {"Take Photo", "Choose from Gallery",
                 "Cancel"};
@@ -247,6 +234,7 @@ public class CreateActivity extends AppCompatActivity {
                     Intent intent = new Intent(
                             Intent.ACTION_PICK,
                             android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                    //intent.setType("image/*");
                     startActivityForResult(intent, 2);
                 } else if (options[item].equals("Cancel")) {
                     dialog.dismiss();
@@ -310,25 +298,20 @@ public class CreateActivity extends AppCompatActivity {
                 }
             } else if (requestCode == 2) {
                 Uri selectedImage = data.getData();
-                logoImage.setImageURI(selectedImage);
-                /*String[] filePath = { MediaStore.Images.Media.DATA };
-                Cursor c = getContentResolver().query(selectedImage, filePath,
-                        null, null, null);
+                String[] filePathColumn = {MediaStore.Images.Media.DATA};
 
-                c.moveToFirst();
-                int columnIndex = c.getColumnIndex(filePath[0]);
-                String picturePath = c.getString(columnIndex);
-                c.close();
-                Bitmap thumbnail = BitmapFactory.decodeFile(picturePath);
-                Log.w("image path from gallery", picturePath + "");
-                logoImage.setImageBitmap(thumbnail);*/
+                Cursor cursor = getContentResolver().query(selectedImage, filePathColumn, null, null, null);
+                assert cursor != null;
+                cursor.moveToFirst();
+
+                int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+                mediaPath = cursor.getString(columnIndex);
+                // Set the Image in ImageView for Previewing the Media
+                logoImage.setImageBitmap(BitmapFactory.decodeFile(selectedImage.getPath()));
+                cursor.close();
             }
         }
 
-        /*
-        save=(Button) findViewById(R.id.btnSave);
-        save.setOnClickListener((View.OnClickListener) this);
-        */
     }
 
 
