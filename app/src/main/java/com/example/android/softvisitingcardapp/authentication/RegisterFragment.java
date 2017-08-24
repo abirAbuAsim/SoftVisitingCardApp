@@ -95,9 +95,11 @@ public class RegisterFragment extends Fragment implements View.OnClickListener{
         user.setName(name);
         user.setEmail(email);
         user.setPassword(password);
+
         ServerRequest request = new ServerRequest();
         request.setOperation(Constants.REGISTER_OPERATION);
         request.setUser(user);
+
         Call<ServerResponse> response = requestInterface.operation(request);
 
         response.enqueue(new Callback<ServerResponse>() {

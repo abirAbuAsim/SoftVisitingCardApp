@@ -6,6 +6,7 @@ public class ServerRequest {
     private String operation;
     private User user;
 
+
     public void setOperation(String operation) {
         this.operation = operation;
     }

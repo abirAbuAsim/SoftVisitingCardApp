@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="2"
-    tools:context=".PreviewDesignActivity">
+    tools:context=".activity.PreviewDesignActivity">
     <android.support.v7.widget.CardView
         android:id="@+id/template_design_five"
         android:layout_width="match_parent"

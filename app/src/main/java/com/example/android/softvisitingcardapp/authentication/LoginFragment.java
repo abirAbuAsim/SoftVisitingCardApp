@@ -15,7 +15,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 
-import com.example.android.softvisitingcardapp.HomeMenuFragment;
+import com.example.android.softvisitingcardapp.activity.HomeMenuFragment;
 import com.example.android.softvisitingcardapp.R;
 import com.example.android.softvisitingcardapp.models.ServerRequest;
 import com.example.android.softvisitingcardapp.models.ServerResponse;

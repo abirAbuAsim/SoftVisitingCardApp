@@ -14,7 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,67 +22,66 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CardGalleryActivity"
+            android:name=".gallery.CardGalleryActivity"
             android:label="Card Gallery"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".activity.MainActivity">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".activity.MainActivity" />
         </activity>
         <activity
-            android:name=".LinkedPeopleActivity"
+            android:name=".people.LinkedPeopleActivity"
             android:label="Linked People"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".activity.MainActivity">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".activity.MainActivity" />
         </activity>
         <activity
-            android:name=".CreateActivity"
+            android:name=".activity.CreateActivity"
             android:label="Create Card"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".activity.PreviewDesignActivity">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".activity.PreviewDesignActivity" />
         </activity>
         <activity
-            android:name=".AboutUsActivity"
+            android:name=".activity.AboutUsActivity"
             android:label="About Us"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".activity.MainActivity">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".activity.MainActivity" />
         </activity>
         <activity
-            android:name=".SelectDesignActivity"
+            android:name=".activity.SelectDesignActivity"
             android:label="Select Design"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".activity.MainActivity">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".activity.MainActivity" />
         </activity>
         <activity
-            android:name=".PreviewDesignActivity"
+            android:name=".activity.PreviewDesignActivity"
             android:label="Preview Design"
-            android:parentActivityName=".SelectDesignActivity">
+            android:parentActivityName=".activity.SelectDesignActivity">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".SelectDesignActivity" />
+                android:value=".activity.SelectDesignActivity" />
         </activity>
-        <activity android:name=".TestActivity" />
-        <activity android:name=".testfragment.TestFragmentActivity" />
+        <activity android:name=".activity.TestActivity" />
         <activity android:name=".authentication.UserProfileActivity"></activity>
     </application>
 

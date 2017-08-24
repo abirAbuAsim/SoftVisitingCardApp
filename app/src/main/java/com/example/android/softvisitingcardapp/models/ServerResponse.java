@@ -7,6 +7,7 @@ public class ServerResponse {
     private String message;
     private User user;
 
+
     public String getResult() {
         return result;
     }
@@ -18,4 +19,6 @@ public class ServerResponse {
     public User getUser() {
         return user;
     }
+
+
 }

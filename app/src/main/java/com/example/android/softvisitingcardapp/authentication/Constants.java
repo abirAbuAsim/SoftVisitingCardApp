@@ -3,10 +3,11 @@ package com.example.android.softvisitingcardapp.authentication;
 
 public class Constants {
 
-    public static final String BASE_URL = "http://192.168.0.105:1234/";
+    public static final String BASE_URL = "http://192.168.0.102:1234/";
     public static final String REGISTER_OPERATION = "register";
     public static final String LOGIN_OPERATION = "login";
     public static final String CHANGE_PASSWORD_OPERATION = "chgPass";
+    public static final String CARD_CREATE_OPERATION = "create";
 
     public static final String SUCCESS = "success";
     public static final String FAILURE = "failure";

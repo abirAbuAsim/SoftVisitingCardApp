@@ -24,7 +24,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.android.softvisitingcardapp.MainActivity" >
+        <activity android:name="com.example.android.softvisitingcardapp.activity.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,67 +32,66 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.android.softvisitingcardapp.CardGalleryActivity"
+            android:name="com.example.android.softvisitingcardapp.gallery.CardGalleryActivity"
             android:label="Card Gallery"
-            android:parentActivityName="com.example.android.softvisitingcardapp.MainActivity" >
+            android:parentActivityName="com.example.android.softvisitingcardapp.activity.MainActivity" >
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".activity.MainActivity" />
         </activity>
         <activity
-            android:name="com.example.android.softvisitingcardapp.LinkedPeopleActivity"
+            android:name="com.example.android.softvisitingcardapp.people.LinkedPeopleActivity"
             android:label="Linked People"
-            android:parentActivityName="com.example.android.softvisitingcardapp.MainActivity" >
+            android:parentActivityName="com.example.android.softvisitingcardapp.activity.MainActivity" >
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".activity.MainActivity" />
         </activity>
         <activity
-            android:name="com.example.android.softvisitingcardapp.CreateActivity"
+            android:name="com.example.android.softvisitingcardapp.activity.CreateActivity"
             android:label="Create Card"
-            android:parentActivityName="com.example.android.softvisitingcardapp.MainActivity" >
+            android:parentActivityName="com.example.android.softvisitingcardapp.activity.PreviewDesignActivity" >
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".activity.PreviewDesignActivity" />
         </activity>
         <activity
-            android:name="com.example.android.softvisitingcardapp.AboutUsActivity"
+            android:name="com.example.android.softvisitingcardapp.activity.AboutUsActivity"
             android:label="About Us"
-            android:parentActivityName="com.example.android.softvisitingcardapp.MainActivity" >
+            android:parentActivityName="com.example.android.softvisitingcardapp.activity.MainActivity" >
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".activity.MainActivity" />
         </activity>
         <activity
-            android:name="com.example.android.softvisitingcardapp.SelectDesignActivity"
+            android:name="com.example.android.softvisitingcardapp.activity.SelectDesignActivity"
             android:label="Select Design"
-            android:parentActivityName="com.example.android.softvisitingcardapp.MainActivity" >
+            android:parentActivityName="com.example.android.softvisitingcardapp.activity.MainActivity" >
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".activity.MainActivity" />
         </activity>
         <activity
-            android:name="com.example.android.softvisitingcardapp.PreviewDesignActivity"
+            android:name="com.example.android.softvisitingcardapp.activity.PreviewDesignActivity"
             android:label="Preview Design"
-            android:parentActivityName="com.example.android.softvisitingcardapp.SelectDesignActivity" >
+            android:parentActivityName="com.example.android.softvisitingcardapp.activity.SelectDesignActivity" >
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".SelectDesignActivity" />
+                android:value=".activity.SelectDesignActivity" />
         </activity>
-        <activity android:name="com.example.android.softvisitingcardapp.TestActivity" />
-        <activity android:name="com.example.android.softvisitingcardapp.testfragment.TestFragmentActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.activity.TestActivity" />
         <activity android:name="com.example.android.softvisitingcardapp.authentication.UserProfileActivity" />
     </application>
 

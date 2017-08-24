@@ -5,8 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="2"
-    tools:context=".CreateActivity">
+    android:weightSum="2">
     <android.support.v7.widget.CardView
         android:id="@+id/template_design_five"
         android:layout_width="match_parent"
@@ -51,7 +50,7 @@
                     android:id="@+id/company_text_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Company Name"
+                    android:text="Organization"
                     android:textSize="18sp"
                     android:layout_marginLeft="16dp"
                     android:layout_below="@id/name_text_view"/>
@@ -147,15 +146,24 @@
                     android:text="+880 1234 56 78 999"
                     android:layout_toRightOf="@id/phone_image"
                     android:paddingTop="12dp"/>
+                <ProgressBar
+                    style="@style/Base.Widget.AppCompat.ProgressBar"
+                    android:id="@+id/progress"
+                    android:layout_toRightOf="@id/mobile_number_text_view"
+                    android:visibility="invisible"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true" />
 
             </RelativeLayout>
         </LinearLayout>
     </android.support.v7.widget.CardView>
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1"
-    android:layout_margin="16dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -169,10 +177,10 @@
                 android:layout_height="wrap_content"
                 android:hint="Name" />
             <EditText
-                android:id="@+id/company_name_edit_text"
+                android:id="@+id/email_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Company Name" />
+                android:hint="Email" />
 
             <EditText
                 android:id="@+id/designation_edit_text"
@@ -181,10 +189,10 @@
                 android:hint="Designation" />
 
             <EditText
-                android:id="@+id/address_edit_text"
+                android:id="@+id/contact_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Address" />
+                android:hint="Contact Number" />
 
             <EditText
                 android:id="@+id/website_edit_text"
@@ -193,16 +201,29 @@
                 android:hint="Website" />
 
             <EditText
-                android:id="@+id/email_edit_text"
+                android:id="@+id/address_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email" />
+                android:hint="Address" />
 
             <EditText
-                android:id="@+id/mobile_number_edit_text"
+                android:id="@+id/organization_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Mobile Number" />
+                android:hint="Organization name" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/create_card_button"
+                android:layout_marginTop="40dp"
+                android:text="Create Card"
+                android:visibility="gone"
+                android:onClick="uploadButtonClicked"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
         </LinearLayout>
-</ScrollView>
+    </ScrollView>
 </LinearLayout>
