@@ -19,7 +19,7 @@ import retrofit2.http.Part;
 public interface ApiInterface {
 
     @Multipart
-    @POST("file_upload_api/upload.php")
+    @POST("/SoftVisitingCardWeb/file_upload_api/upload.php")
     Call<ResponseModel> fileUpload(
             @Part("sender_information") RequestBody description,
             @Part MultipartBody.Part file);

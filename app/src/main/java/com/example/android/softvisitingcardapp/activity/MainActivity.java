@@ -2,35 +2,53 @@ package com.example.android.softvisitingcardapp.activity;
 
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.example.android.softvisitingcardapp.R;
-import com.example.android.softvisitingcardapp.authentication.Constants;
-import com.example.android.softvisitingcardapp.authentication.LoginFragment;
+import com.example.android.softvisitingcardapp.helper.SharedPrefManager;
 
 
-public class MainActivity extends AppCompatActivity {
-    private SharedPreferences pref;
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+
+    private Button buttonSignIn, buttonSignUp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        pref = getPreferences(0);
-        initFragment();
+
+        //if user is already logged in openeing the profile activity
+        if (SharedPrefManager.getInstance(this).isLoggedIn()) {
+            finish();
+            startActivity(new Intent(this, HomeActivity.class));
+        }
+
+        buttonSignIn = (Button) findViewById(R.id.buttonSignIn);
+        buttonSignUp = (Button) findViewById(R.id.buttonSignUp);
+
+        buttonSignIn.setOnClickListener(this);
+        buttonSignUp.setOnClickListener(this);
+
     }
 
-    private void initFragment(){
-        Fragment fragment;
-        if(pref.getBoolean(Constants.IS_LOGGED_IN,false)){
-            fragment = new HomeMenuFragment();
-        }else {
-            fragment = new LoginFragment();
+    @Override
+    public void onClick(View view) {
+
+        if (view == buttonSignIn) {
+
+            startActivity(new Intent(this, SignInActivity.class));
+
+        } else if (view == buttonSignUp) {
+
+            startActivity(new Intent(this, SignUpActivity.class));
+
         }
-        FragmentTransaction ft = getFragmentManager().beginTransaction();
-        ft.replace(R.id.fragment_frame,fragment);
-        ft.commit();
     }
+
+
 }

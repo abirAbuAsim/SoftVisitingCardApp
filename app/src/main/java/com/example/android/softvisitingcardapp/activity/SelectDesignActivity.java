@@ -7,7 +7,6 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 
 import com.example.android.softvisitingcardapp.R;
-import com.example.android.softvisitingcardapp.authentication.Constants;
 
 public class SelectDesignActivity extends AppCompatActivity {
     CardView designOneCard, designTwoCard, designThreeCard, desighFourCard, designFiveCard, designSixCard;

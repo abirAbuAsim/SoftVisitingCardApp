@@ -1,15 +1,38 @@
 package com.example.android.softvisitingcardapp.models;
 
+/**
+ * Created by Belal on 14/04/17.
+ */
 
 public class User {
 
+    private int id;
     private String name;
     private String email;
-    private String unique_id;
     private String password;
-    private String old_password;
-    private String new_password;
 
+    public User(String name, String email, String password) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+    }
+
+    public User(int id, String name, String email){
+        this.id = id;
+        this.name = name;
+        this.email = email;
+    }
+
+    public User(int id, String name, String email, String password) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.password = password;
+    }
+
+    public int getId() {
+        return id;
+    }
 
     public String getName() {
         return name;
@@ -19,29 +42,8 @@ public class User {
         return email;
     }
 
-    public String getUnique_id() {
-        return unique_id;
-    }
-
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public void setOld_password(String old_password) {
-        this.old_password = old_password;
-    }
-
-    public void setNew_password(String new_password) {
-        this.new_password = new_password;
+    public String getPassword(){
+        return password;
     }
 
 }

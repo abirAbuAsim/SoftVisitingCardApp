@@ -4,15 +4,13 @@ package com.example.android.softvisitingcardapp.activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.android.softvisitingcardapp.R;
-import com.example.android.softvisitingcardapp.authentication.Constants;
-import com.example.android.softvisitingcardapp.authentication.UserProfileActivity;
 import com.example.android.softvisitingcardapp.gallery.CardGalleryActivity;
 import com.example.android.softvisitingcardapp.people.LinkedPeopleActivity;
 
@@ -41,7 +39,7 @@ public class HomeMenuFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent menuIntent = new Intent(getActivity(), SelectDesignActivity.class);
-                menuIntent.putExtra("userEmail", pref.getString(Constants.EMAIL, ""));
+                //menuIntent.putExtra("userEmail", pref.getString(Constants.EMAIL, ""));
                 startActivity(menuIntent);
             }
         });
@@ -53,7 +51,7 @@ public class HomeMenuFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent menuIntent = new Intent(getActivity(), CardGalleryActivity.class);
-                menuIntent.putExtra("userEmail", pref.getString(Constants.EMAIL, ""));
+                //menuIntent.putExtra("userEmail", pref.getString(Constants.EMAIL, ""));
                 startActivity(menuIntent);
             }
         });
@@ -64,7 +62,7 @@ public class HomeMenuFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent linkedPeopleIntent = new Intent(getActivity(), LinkedPeopleActivity.class);
-                linkedPeopleIntent.putExtra("userEmail", pref.getString(Constants.EMAIL, ""));
+                //linkedPeopleIntent.putExtra("userEmail", pref.getString(Constants.EMAIL, ""));
                 startActivity(linkedPeopleIntent);
             }
         });
@@ -82,8 +80,8 @@ public class HomeMenuFragment extends Fragment {
             // The code in this method will be executed when the Create CardSent View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent menuIntent = new Intent(getActivity(), UserProfileActivity.class);
-                startActivity(menuIntent);
+                //Intent menuIntent = new Intent(getActivity(), UserProfileActivity.class);
+                //startActivity(menuIntent);
             }
         });
     }

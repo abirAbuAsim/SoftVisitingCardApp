@@ -102,7 +102,12 @@
                 android:value=".activity.SelectDesignActivity" />
         </activity>
         <activity android:name="com.example.android.softvisitingcardapp.activity.TestActivity" />
-        <activity android:name="com.example.android.softvisitingcardapp.authentication.UserProfileActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.activity.SignInActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.activity.SignUpActivity" />
+        <activity
+            android:name="com.example.android.softvisitingcardapp.activity.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

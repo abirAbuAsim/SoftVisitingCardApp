@@ -2,13 +2,11 @@ package com.example.android.softvisitingcardapp.activity;
 
 import android.Manifest;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
-import android.preference.PreferenceManager;
 import android.provider.MediaStore;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -30,14 +28,11 @@ import com.example.android.softvisitingcardapp.ModelClass.EventModel;
 import com.example.android.softvisitingcardapp.ModelClass.CardSent;
 import com.example.android.softvisitingcardapp.NetworkRelatedClass.NetworkCall;
 import com.example.android.softvisitingcardapp.R;
-import com.example.android.softvisitingcardapp.authentication.Constants;
 
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
-
-import static android.R.attr.mode;
 
 
 public class CreateActivity extends AppCompatActivity {
