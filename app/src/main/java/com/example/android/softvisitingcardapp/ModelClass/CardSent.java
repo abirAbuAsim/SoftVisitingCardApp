@@ -26,6 +26,8 @@ public class CardSent implements Parcelable {
     private String logoImage;
     @SerializedName("sender_background_image")
     private String backgroundImage;
+    @SerializedName("sender_card_maker_email")
+    private String cardMakerEmail;
 
     public CardSent() {
     }
@@ -34,7 +36,7 @@ public class CardSent implements Parcelable {
 
     public CardSent(String sender, String email, String designation,
                     String contact, String website, String address,
-                    String organization, String backgroundImage, String logoImage) {
+                    String organization, String backgroundImage, String logoImage, String cardMakerEmail) {
         this.sender = sender;
         this.email = email;
         this.designation = designation;
@@ -44,6 +46,7 @@ public class CardSent implements Parcelable {
         this.organization = organization;
         this.logoImage = logoImage;
         this.backgroundImage = backgroundImage;
+        this.cardMakerEmail = cardMakerEmail;
     }
 
     public final static Parcelable.Creator<CardSent> CREATOR = new Creator<CardSent>() {
@@ -62,6 +65,7 @@ public class CardSent implements Parcelable {
             instance.organization = ((String) in.readValue((String.class.getClassLoader())));
             instance.backgroundImage = ((String) in.readValue((String.class.getClassLoader())));
             instance.logoImage = ((String) in.readValue((String.class.getClassLoader())));
+            instance.cardMakerEmail = ((String) in.readValue((String.class.getClassLoader())));
             return instance;
         }
 
@@ -82,6 +86,7 @@ public class CardSent implements Parcelable {
         dest.writeValue(organization);
         dest.writeValue(backgroundImage);
         dest.writeValue(logoImage);
+        dest.writeValue(cardMakerEmail);
     }
 
     public int describeContents() {
@@ -158,5 +163,13 @@ public class CardSent implements Parcelable {
 
     public void setBackgroundImage(String backgroundImage) {
         this.backgroundImage = backgroundImage;
+    }
+
+    public String getCardMakerEmail() {
+        return cardMakerEmail;
+    }
+
+    public void setCardMakerEmail(String cardMakerEmail) {
+        this.cardMakerEmail = cardMakerEmail;
     }
 }

@@ -2,10 +2,13 @@ package com.example.android.softvisitingcardapp.activity;
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
+import android.preference.PreferenceManager;
 import android.provider.MediaStore;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -27,11 +30,14 @@ import com.example.android.softvisitingcardapp.ModelClass.EventModel;
 import com.example.android.softvisitingcardapp.ModelClass.CardSent;
 import com.example.android.softvisitingcardapp.NetworkRelatedClass.NetworkCall;
 import com.example.android.softvisitingcardapp.R;
+import com.example.android.softvisitingcardapp.authentication.Constants;
 
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
+
+import static android.R.attr.mode;
 
 
 public class CreateActivity extends AppCompatActivity {
@@ -42,6 +48,9 @@ public class CreateActivity extends AppCompatActivity {
     String name, companyName, designation, address, website, email, mobileNumber;
     private ImageView logoImage, backgroundImage;
     String mediaPath;
+
+    private SharedPreferences pref;
+    String cardMakerEmail;
 
     private String filePath;
     private int backgroundImageID;
@@ -72,11 +81,19 @@ public class CreateActivity extends AppCompatActivity {
         ft.commit();
         */
 
+        // get the preferences
+        //pref = this.getPreferences(0);
+
+
+
         Bundle extras = getIntent().getExtras();
         if (extras == null) {
             return;
         }
         int res = extras.getInt("res");
+        final String userEmail = extras.getString("userEmail");
+        cardMakerEmail = userEmail;
+
         ImageView templateImage = (ImageView) findViewById(R.id.card_background_image_view);
         templateImage.setImageResource(res);
         backgroundImageID = res;
@@ -283,8 +300,15 @@ public class CreateActivity extends AppCompatActivity {
         String backgroundImageName = backgroundImage.getResources().getResourceName(backgroundImageID);
         backgroundImageName = backgroundImageName.substring(backgroundImageName.lastIndexOf("/")+1);
 
+        // get the user email from SharedPreference and use it as the maker of the card being created.
+        //SharedPreferences userDetails = getApplicationContext().getSharedPreferences("userDetails", Context.MODE_PRIVATE);
+
+
+        //String cardMakerEmail= userDetails.getString(Constants.EMAIL, "");
+        //String cardMakerEmail= "abir.sakif@gmail.com";
+
         NetworkCall.fileUpload(filePath, new CardSent(name, email, designation, contact,
-                website, address, organization, backgroundImageName,logoImage));
+                website, address, organization, backgroundImageName,logoImage, cardMakerEmail));
     }
 
     private String getPath(Uri uri) {

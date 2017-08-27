@@ -7,6 +7,7 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 
 import com.example.android.softvisitingcardapp.R;
+import com.example.android.softvisitingcardapp.authentication.Constants;
 
 public class SelectDesignActivity extends AppCompatActivity {
     CardView designOneCard, designTwoCard, designThreeCard, desighFourCard, designFiveCard, designSixCard;
@@ -17,6 +18,12 @@ public class SelectDesignActivity extends AppCompatActivity {
         setContentView(R.layout.activity_select_design);
 
         designOneCard = (CardView) findViewById(R.id.template_design_one);
+        Bundle extras = getIntent().getExtras();
+        if (extras == null)
+        {
+            return;
+        }
+        final String userEmail = extras.getString("userEmail");
 
         // Set a click listener on that View
         designOneCard.setOnClickListener(new View.OnClickListener() {
@@ -25,6 +32,7 @@ public class SelectDesignActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent designIntent = new Intent(SelectDesignActivity.this, PreviewDesignActivity.class);
                 designIntent.putExtra("res", R.drawable.card_background_one);
+                designIntent.putExtra("userEmail", userEmail);
                 startActivity(designIntent);
             }
         });

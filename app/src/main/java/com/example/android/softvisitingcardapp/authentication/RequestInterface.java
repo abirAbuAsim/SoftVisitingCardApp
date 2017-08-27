@@ -10,6 +10,6 @@ import retrofit2.http.Body;
 import retrofit2.http.POST;
 
 public interface RequestInterface {
-    @POST("/card/android/user_index.php")
+    @POST("/SoftVisitingCardWeb/android/user_index.php")
     Call<ServerResponse> operation(@Body ServerRequest request);
 }

@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.android.softvisitingcardapp.R;
+import com.example.android.softvisitingcardapp.authentication.Constants;
 import com.example.android.softvisitingcardapp.authentication.UserProfileActivity;
 import com.example.android.softvisitingcardapp.gallery.CardGalleryActivity;
 import com.example.android.softvisitingcardapp.people.LinkedPeopleActivity;
@@ -40,6 +41,7 @@ public class HomeMenuFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent menuIntent = new Intent(getActivity(), SelectDesignActivity.class);
+                menuIntent.putExtra("userEmail", pref.getString(Constants.EMAIL, ""));
                 startActivity(menuIntent);
             }
         });
@@ -51,6 +53,7 @@ public class HomeMenuFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent menuIntent = new Intent(getActivity(), CardGalleryActivity.class);
+                menuIntent.putExtra("userEmail", pref.getString(Constants.EMAIL, ""));
                 startActivity(menuIntent);
             }
         });
@@ -61,6 +64,7 @@ public class HomeMenuFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent linkedPeopleIntent = new Intent(getActivity(), LinkedPeopleActivity.class);
+                linkedPeopleIntent.putExtra("userEmail", pref.getString(Constants.EMAIL, ""));
                 startActivity(linkedPeopleIntent);
             }
         });

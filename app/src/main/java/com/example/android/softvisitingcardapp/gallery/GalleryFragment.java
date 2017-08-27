@@ -25,11 +25,15 @@ public class GalleryFragment extends Fragment {
 
     private RecyclerView recyclerViewUsers;
     private RecyclerView.Adapter adapter;
+    public static String userEmail;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        // get userEmail sent from CardGalleryActivity
+        userEmail = this.getArguments().getString("userEmail");
         return inflater.inflate(R.layout.fragment_home, container, false);
+
     }
 
 

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-88:12
+ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-98:12
 	package
 		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:3:5-54
 		INJECTED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
@@ -30,7 +30,7 @@ ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main
 	android:name
 		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:8:22-77
 application
-ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:10:5-86:19
+ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:10:5-96:19
 MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\absak\.android\build-cache\aa9e7e199bd40697c2d8c6b63c51dd4c529a6bc5\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:design:25.3.1] C:\Users\absak\.android\build-cache\760d1cf2f3b9014c4b1536d9f08a34693781c282\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\absak\.android\build-cache\c46b1a218de6069cada6e14feebea55a3311d3f6\output\AndroidManifest.xml:29:5-20
@@ -92,46 +92,54 @@ ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main
 		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:37:13-64
 	android:name
 		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:35:13-56
-activity#com.example.android.softvisitingcardapp.activity.CreateActivity
+activity#com.example.android.softvisitingcardapp.people.OtherUsersActivity
 ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:44:9-53:20
 	android:label
-		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:46:13-40
+		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:46:13-45
 	android:parentActivityName
-		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:47:13-73
+		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:47:13-70
 	android:name
-		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:45:13-52
-activity#com.example.android.softvisitingcardapp.activity.AboutUsActivity
+		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:45:13-54
+activity#com.example.android.softvisitingcardapp.activity.CreateActivity
 ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:54:9-63:20
 	android:label
-		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:56:13-37
+		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:56:13-40
 	android:parentActivityName
-		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:57:13-64
+		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:57:13-73
 	android:name
-		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:55:13-53
-activity#com.example.android.softvisitingcardapp.activity.SelectDesignActivity
+		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:55:13-52
+activity#com.example.android.softvisitingcardapp.activity.AboutUsActivity
 ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:64:9-73:20
 	android:label
-		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:66:13-42
+		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:66:13-37
 	android:parentActivityName
 		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:67:13-64
 	android:name
-		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:65:13-58
-activity#com.example.android.softvisitingcardapp.activity.PreviewDesignActivity
+		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:65:13-53
+activity#com.example.android.softvisitingcardapp.activity.SelectDesignActivity
 ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:74:9-83:20
 	android:label
-		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:76:13-43
+		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:76:13-42
 	android:parentActivityName
-		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:77:13-72
+		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:77:13-64
 	android:name
-		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:75:13-59
+		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:75:13-58
+activity#com.example.android.softvisitingcardapp.activity.PreviewDesignActivity
+ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:84:9-93:20
+	android:label
+		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:86:13-43
+	android:parentActivityName
+		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:87:13-72
+	android:name
+		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:85:13-59
 activity#com.example.android.softvisitingcardapp.activity.TestActivity
-ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:84:9-59
+ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:94:9-59
 	android:name
-		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:84:19-56
+		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:94:19-56
 activity#com.example.android.softvisitingcardapp.authentication.UserProfileActivity
-ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:85:9-81
+ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:95:9-81
 	android:name
-		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:85:19-69
+		ADDED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:95:19-69
 uses-sdk
 INJECTED from C:\Users\absak\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\absak\.android\build-cache\aa9e7e199bd40697c2d8c6b63c51dd4c529a6bc5\output\AndroidManifest.xml:20:5-43

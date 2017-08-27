@@ -42,6 +42,16 @@
                 android:value=".activity.MainActivity" />
         </activity>
         <activity
+            android:name=".people.OtherUsersActivity"
+            android:label="Select app users"
+            android:parentActivityName=".gallery.CardGalleryActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".gallery.CardGalleryActivity" />
+        </activity>
+        <activity
             android:name=".activity.CreateActivity"
             android:label="Create Card"
             android:parentActivityName=".activity.PreviewDesignActivity">

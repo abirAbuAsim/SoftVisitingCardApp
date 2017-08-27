@@ -1,28 +1,22 @@
 package com.example.android.softvisitingcardapp.gallery;
 
-import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.res.Resources;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
-import com.example.android.softvisitingcardapp.ModelClass.CardSent;
 import com.example.android.softvisitingcardapp.R;
+import com.example.android.softvisitingcardapp.people.LinkedPeopleActivity;
+import com.example.android.softvisitingcardapp.people.OtherUsersActivity;
 
 import java.util.ArrayList;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  * Created by absak on 8/21/2017.
@@ -64,45 +58,19 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
         holder.backgroundImage.setImageDrawable(res);
 
 
-        /*
-        holder.imageButtonMessage.setOnClickListener(new View.OnClickListener() {
+
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                LayoutInflater li = LayoutInflater.from(mCtx);
-                View promptsView = li.inflate(R.layout.dialog_send_message, null);
-                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(mCtx);
-                alertDialogBuilder.setView(promptsView);
-
-                final EditText editTextTitle = (EditText) promptsView.findViewById(R.id.editTextTitle);
-                final EditText editTextMessage = (EditText) promptsView.findViewById(R.id.editTextMessage);
-
-                alertDialogBuilder
-                        .setCancelable(false)
-                        .setPositiveButton("Send",
-                                new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface dialog, int id) {
-
-                                        //getting the values
-                                        String title = editTextTitle.getText().toString().trim();
-                                        String message = editTextMessage.getText().toString().trim();
-
-                                        //sending the message
-                                        sendMessage(card.getId(), title, message);
-                                    }
-                                })
-                        .setNegativeButton("Cancel",
-                                new DialogInterface.OnClickListener() {
-                                    public void onClick(DialogInterface dialog, int id) {
-                                        dialog.cancel();
-                                    }
-                                });
-                AlertDialog alertDialog = alertDialogBuilder.create();
-                alertDialog.show();
+                Intent cardIntent = new Intent(mCtx, OtherUsersActivity.class);
+                cardIntent.putExtra("userEmail", GalleryFragment.userEmail);
+                // send the card at the selected position in bundle
+                cardIntent.putExtra("cardId", card.getId());
+                mCtx.startActivity(cardIntent);
 
             }
         });
-        */
+
     }
 
 /*    //method to send message to the user
@@ -152,6 +120,9 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
 
         public TextView nameTextView, designationTextView, emailTextView, contactTextView;
         public ImageView backgroundImage;
+
+        // Initialize the card view in the list
+        public CardView cardView;
         //public ImageButton imageButtonMessage;
 
         public ViewHolder(View itemView) {
@@ -163,6 +134,8 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
             contactTextView = (TextView) itemView.findViewById(R.id.contact_text_view);
 
             backgroundImage = (ImageView) itemView.findViewById(R.id.card_background_image_view);
+
+            cardView = (CardView) itemView.findViewById(R.id.card_gallery_card_view);
 
             //imageButtonMessage = (ImageButton) itemView.findViewById(R.id.imageButtonMessage);
         }

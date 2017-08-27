@@ -24,6 +24,10 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+import static android.R.id.message;
+import static com.example.android.softvisitingcardapp.R.id.editTextMessage;
+import static com.example.android.softvisitingcardapp.R.id.editTextTitle;
+
 /**
  * Created by Belal on 14/04/17.
  */
@@ -49,6 +53,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     public void onBindViewHolder(UserAdapter.ViewHolder holder, int position) {
         final User user = users.get(position);
         holder.textViewName.setText(user.getName());
+        holder.textViewUserName.setText(PeopleFragment.userEmail);
 
         holder.imageButtonMessage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,8 +64,8 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
                 AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(mCtx);
                 alertDialogBuilder.setView(promptsView);
 
-                final EditText editTextTitle = (EditText) promptsView.findViewById(R.id.editTextTitle);
-                final EditText editTextMessage = (EditText) promptsView.findViewById(R.id.editTextMessage);
+                //final EditText editTextTitle = (EditText) promptsView.findViewById(R.id.editTextTitle);
+                //final EditText editTextMessage = (EditText) promptsView.findViewById(R.id.editTextMessage);
 
                 alertDialogBuilder
                         .setCancelable(false)
@@ -69,11 +74,11 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
                                     public void onClick(DialogInterface dialog, int id) {
 
                                         //getting the values
-                                        String title = editTextTitle.getText().toString().trim();
-                                        String message = editTextMessage.getText().toString().trim();
+                                        //String title = editTextTitle.getText().toString().trim();
+                                        //String message = editTextMessage.getText().toString().trim();
 
                                         //sending the message
-                                        sendMessage(user.getId(), title, message);
+                                        //sendMessage(user.getEmail());
                                     }
                                 })
                         .setNegativeButton("Cancel",
@@ -90,7 +95,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     }
 
     //method to send message to the user
-    private void sendMessage(int id, String title, String message) {
+    /*private void sendMessage(String receiverEmail) {
 
         final ProgressDialog progressDialog = new ProgressDialog(mCtx);
         progressDialog.setMessage("Sending Message...");
@@ -104,11 +109,10 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
         APIService service = retrofit.create(APIService.class);
 
 
-        Call<MessageResponse> call = service.sendMessage(
-                SharedPrefManager.getInstance(mCtx).getUser().getId(),
-                id,
-                title,
-                message
+        Call<MessageResponse> call = service.sendCard(
+                PeopleFragment.userEmail,
+                receiverEmail,
+                PeopleFragment.cardId
         );
 
         call.enqueue(new Callback<MessageResponse>() {
@@ -124,7 +128,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
                 Toast.makeText(mCtx, t.getMessage(), Toast.LENGTH_LONG).show();
             }
         });
-    }
+    }*/
 
     @Override
     public int getItemCount() {
@@ -134,13 +138,14 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        public TextView textViewName;
+        public TextView textViewName, textViewUserName;
         public ImageButton imageButtonMessage;
 
         public ViewHolder(View itemView) {
             super(itemView);
 
             textViewName = (TextView) itemView.findViewById(R.id.textViewName);
+            textViewUserName = (TextView) itemView.findViewById(R.id.textViewUserName);
             imageButtonMessage = (ImageButton) itemView.findViewById(R.id.imageButtonMessage);
         }
     }

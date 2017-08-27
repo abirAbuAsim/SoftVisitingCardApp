@@ -35,6 +35,14 @@ public interface APIService {
     @GET("users")
     Call<Users> getUsers();
 
+    // get all the app users except the user him/her self
+    @GET("users/{email}")
+    Call<Users> getOtherUsers(@Path("email") String email);
+
+    // Gets the users who are linked with the user
+    @GET("links/{email}")
+    Call<Users> getLinks(@Path("email") String email);
+
     @FormUrlEncoded
     @POST("sendmessage")
     Call<MessageResponse> sendMessage(
@@ -42,6 +50,13 @@ public interface APIService {
             @Field("to") int to,
             @Field("title") String title,
             @Field("message") String message);
+
+    @FormUrlEncoded
+    @POST("sendcard")
+    Call<MessageResponse> sendCard(
+            @Field("sender_id") String senderId,
+            @Field("receiver_id") String receiverId,
+            @Field("card_id") int cardId);
 
     @FormUrlEncoded
     @POST("update/{id}")

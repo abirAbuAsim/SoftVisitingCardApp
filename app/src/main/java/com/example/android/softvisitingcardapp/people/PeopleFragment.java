@@ -26,10 +26,15 @@ public class PeopleFragment extends Fragment {
 
     private RecyclerView recyclerViewUsers;
     private RecyclerView.Adapter adapter;
+    public static String userEmail;
+    public static int cardId;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        // get userEmail sent from LinkedPeopleActivity
+        userEmail = this.getArguments().getString("userEmail");
+        cardId = this.getArguments().getInt("cardId");
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
@@ -52,7 +57,7 @@ public class PeopleFragment extends Fragment {
         APIService service = retrofit.create(APIService.class);
 
 
-        Call<Users> call = service.getUsers();
+        Call<Users> call = service.getLinks(userEmail);
 
         call.enqueue(new Callback<Users>() {
             @Override
