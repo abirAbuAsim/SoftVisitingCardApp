@@ -5,12 +5,11 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="2"
     tools:context=".activity.PreviewDesignActivity">
     <android.support.v7.widget.CardView
         android:id="@+id/template_design_five"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="40dp"
         android:layout_weight="1"
         android:layout_margin="8dp"
         android:elevation="8dp"

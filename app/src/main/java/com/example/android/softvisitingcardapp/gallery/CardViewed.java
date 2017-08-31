@@ -18,10 +18,11 @@ public class CardViewed {
     private String organization;
     private String backgroundImage;
     private String logoImage;
+    private String cardMakerEmail;
 
     public CardViewed(int id, String name, String email, String designation, String contact,
                       String website, String address, String organization, String backgroundImage,
-                      String logoImage) {
+                      String logoImage, String cardMakerEmail) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -32,6 +33,22 @@ public class CardViewed {
         this.organization = organization;
         this.backgroundImage = backgroundImage;
         this.logoImage = logoImage;
+        this.cardMakerEmail = cardMakerEmail;
+    }
+
+    public CardViewed(String name, String email, String designation, String contact,
+                      String website, String address, String organization, String backgroundImage,
+                      String logoImage, String cardMakerEmail) {
+        this.name = name;
+        this.email = email;
+        this.designation = designation;
+        this.contact = contact;
+        this.website = website;
+        this.address = address;
+        this.organization = organization;
+        this.backgroundImage = backgroundImage;
+        this.logoImage = logoImage;
+        this.cardMakerEmail = cardMakerEmail;
     }
 
     public CardViewed(String name, String email, String designation, String contact, String website,
@@ -83,5 +100,9 @@ public class CardViewed {
 
     public String getLogoImage() {
         return logoImage;
+    }
+
+    public String getCardMakerEmail() {
+        return cardMakerEmail;
     }
 }

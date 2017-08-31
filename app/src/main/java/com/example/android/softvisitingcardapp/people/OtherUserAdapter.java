@@ -14,6 +14,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.android.softvisitingcardapp.R;
+import com.example.android.softvisitingcardapp.api.APIService;
+import com.example.android.softvisitingcardapp.api.APIUrl;
+import com.example.android.softvisitingcardapp.models.MessageResponse;
+import com.example.android.softvisitingcardapp.models.User;
 
 
 import java.util.List;
@@ -52,7 +56,7 @@ public class OtherUserAdapter extends RecyclerView.Adapter<OtherUserAdapter.View
     public void onBindViewHolder(OtherUserAdapter.ViewHolder holder, int position) {
         final User user = users.get(position);
         holder.textViewName.setText(user.getName());
-        holder.textViewUserName.setText(OtherUsersFragment.userEmail);
+        holder.textViewUserName.setText(user.getEmail());
 
         holder.imageButtonMessage.setOnClickListener(new View.OnClickListener() {
             @Override

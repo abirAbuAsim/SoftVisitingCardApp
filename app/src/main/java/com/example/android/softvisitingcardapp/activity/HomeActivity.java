@@ -98,7 +98,7 @@ public class HomeActivity extends AppCompatActivity
     private void logout() {
         SharedPrefManager.getInstance(this).logout();
         finish();
-        startActivity(new Intent(this, SignInActivity.class));
+        startActivity(new Intent(this, MainActivity.class));
     }
 
     @SuppressWarnings("StatementWithEmptyBody")

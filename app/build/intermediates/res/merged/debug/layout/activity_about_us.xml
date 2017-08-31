@@ -36,11 +36,20 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:gravity="center_horizontal"
-                android:text="Developer: Urme Dey"
+                android:text="Developers: Group members"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp" />
         </LinearLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/white_background"
+            android:scaleType="centerCrop"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,6 +58,7 @@
             android:text="Project Details"
             android:textColor="#000000"
             android:textSize="24sp" />
+    </RelativeLayout>
 
     </LinearLayout>
 </ScrollView>

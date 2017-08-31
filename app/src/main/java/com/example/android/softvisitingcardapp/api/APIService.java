@@ -2,16 +2,25 @@ package com.example.android.softvisitingcardapp.api;
 
 
 
+import com.example.android.softvisitingcardapp.ModelClass.CardSent;
+import com.example.android.softvisitingcardapp.ModelClass.ResponseModel;
+import com.example.android.softvisitingcardapp.gallery.Cards;
 import com.example.android.softvisitingcardapp.models.MessageResponse;
 import com.example.android.softvisitingcardapp.models.Messages;
 import com.example.android.softvisitingcardapp.models.Result;
 import com.example.android.softvisitingcardapp.models.Users;
 
+import java.util.List;
+
+import okhttp3.MultipartBody;
+import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
+import retrofit2.http.Multipart;
 import retrofit2.http.POST;
+import retrofit2.http.Part;
 import retrofit2.http.Path;
 
 /**
@@ -26,6 +35,24 @@ public interface APIService {
             @Field("name") String name,
             @Field("email") String email,
             @Field("password") String password);
+
+
+
+    @FormUrlEncoded
+    @POST("cardcreate")
+    Call<Result> createCard(
+            @Field("name") String name,
+            @Field("email") String email,
+            @Field("designation") String designation,
+            @Field("contact") String contact,
+            @Field("website") String website,
+            @Field("address") String address,
+            @Field("organization") String organization,
+            @Field("background_image") String backgroundImage,
+            @Field("logo_image") String logoImage,
+            @Field("card_maker_email") String cardMakerEmail
+    );
+
 
 
     @FormUrlEncoded
@@ -59,4 +86,31 @@ public interface APIService {
     //getting messages
     @GET("messages/{id}")
     Call<Messages> getMessages(@Path("id") int id);
+
+    // Gets the users who are linked with the user
+    @GET("links/{email}")
+    Call<Users> getLinks(@Path("email") String email);
+
+    // get all the app users except the user him/her self
+    @GET("users/{email}")
+    Call<Users> getOtherUsers(@Path("email") String email);
+
+    @GET("cards")
+    Call<Cards> getCards();
+
+    @FormUrlEncoded
+    @POST("sendcard")
+    Call<MessageResponse> sendCard(
+            @Field("sender_id") String senderId,
+            @Field("receiver_id") String receiverId,
+            @Field("card_id") int cardId);
+
+    @Multipart
+    @POST("file_upload_api/card_create.php")
+    Call<ResponseModel> fileUpload(
+            @Part("sender_information") RequestBody description,
+            @Part MultipartBody.Part file);
+
+    @GET("/file_upload_api/display_card_data.php")
+    Call<List<CardSent>> loadCards();
 }

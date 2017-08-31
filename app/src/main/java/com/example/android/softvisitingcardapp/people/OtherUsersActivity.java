@@ -19,11 +19,10 @@ public class OtherUsersActivity extends AppCompatActivity {
         {
             return;
         }
-        final String userEmail = extras.getString("userEmail");
+
         final int cardId = extras.getInt("cardId");
 
         Bundle bundle = new Bundle();
-        bundle.putString("userEmail", userEmail);
         bundle.putInt("cardId", cardId);
 
         Fragment fragment = new OtherUsersFragment();

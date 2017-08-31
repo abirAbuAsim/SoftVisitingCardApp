@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import com.example.android.softvisitingcardapp.R;
 import com.example.android.softvisitingcardapp.gallery.CardGalleryActivity;
+import com.example.android.softvisitingcardapp.helper.SharedPrefManager;
 import com.example.android.softvisitingcardapp.people.LinkedPeopleActivity;
 
 
@@ -32,6 +33,7 @@ public class HomeMenuFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         pref = getActivity().getPreferences(0);
+        getActivity().setTitle("Soft Visiting Card App");
         // Find the Create menu card
         createCardView = (CardView) getActivity().findViewById(R.id.create_card_view);
         createCardView.setOnClickListener(new View.OnClickListener() {
@@ -39,7 +41,7 @@ public class HomeMenuFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent menuIntent = new Intent(getActivity(), SelectDesignActivity.class);
-                //menuIntent.putExtra("userEmail", pref.getString(Constants.EMAIL, ""));
+
                 startActivity(menuIntent);
             }
         });
@@ -51,7 +53,7 @@ public class HomeMenuFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent menuIntent = new Intent(getActivity(), CardGalleryActivity.class);
-                //menuIntent.putExtra("userEmail", pref.getString(Constants.EMAIL, ""));
+
                 startActivity(menuIntent);
             }
         });
@@ -62,7 +64,7 @@ public class HomeMenuFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent linkedPeopleIntent = new Intent(getActivity(), LinkedPeopleActivity.class);
-                //linkedPeopleIntent.putExtra("userEmail", pref.getString(Constants.EMAIL, ""));
+
                 startActivity(linkedPeopleIntent);
             }
         });
@@ -75,15 +77,7 @@ public class HomeMenuFragment extends Fragment {
                 startActivity(menuIntent);
             }
         });
-        userProfileCardView = (CardView) getActivity().findViewById(R.id.user_profile_card_view);
-        userProfileCardView.setOnClickListener(new View.OnClickListener() {
-            // The code in this method will be executed when the Create CardSent View is clicked on.
-            @Override
-            public void onClick(View view) {
-                //Intent menuIntent = new Intent(getActivity(), UserProfileActivity.class);
-                //startActivity(menuIntent);
-            }
-        });
+
     }
 
 

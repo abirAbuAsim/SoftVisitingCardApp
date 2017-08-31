@@ -5,5 +5,5 @@ package com.example.android.softvisitingcardapp.api;
  */
 
 public class APIUrl {
-    public static final String BASE_URL = "http://192.168.0.107:1234/SoftVisitingCardWeb/RetrofitExample/public/";
+    public static final String BASE_URL = "https://card.thehumblelearner.com/RetrofitExample/public/";
 }

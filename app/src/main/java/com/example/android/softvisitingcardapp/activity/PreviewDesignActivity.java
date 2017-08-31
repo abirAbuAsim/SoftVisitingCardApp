@@ -20,8 +20,7 @@ public class PreviewDesignActivity extends AppCompatActivity {
         {
             return;
         }
-        int res = extras.getInt("res");
-        final String userEmail = extras.getString("userEmail");
+        final int res = extras.getInt("res");
 
         ImageView templateImage = (ImageView) findViewById(R.id.card_background_image_view);
         templateImage.setImageResource(res);
@@ -32,8 +31,7 @@ public class PreviewDesignActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent designIntent = new Intent(PreviewDesignActivity.this, CreateActivity.class);
-                designIntent.putExtra("res", R.drawable.card_background_one);
-                designIntent.putExtra("userEmail", userEmail);
+                designIntent.putExtra("res", res);
                 startActivity(designIntent);
             }
         });

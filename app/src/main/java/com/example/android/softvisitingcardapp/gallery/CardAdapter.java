@@ -63,7 +63,6 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
             @Override
             public void onClick(View view) {
                 Intent cardIntent = new Intent(mCtx, OtherUsersActivity.class);
-                cardIntent.putExtra("userEmail", GalleryFragment.userEmail);
                 // send the card at the selected position in bundle
                 cardIntent.putExtra("cardId", card.getId());
                 mCtx.startActivity(cardIntent);

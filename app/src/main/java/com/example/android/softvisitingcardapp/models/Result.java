@@ -22,6 +22,11 @@ public class Result {
         this.user = user;
     }
 
+    public Result(Boolean error, String message) {
+        this.error = error;
+        this.message = message;
+    }
+
     public Boolean getError() {
         return error;
     }

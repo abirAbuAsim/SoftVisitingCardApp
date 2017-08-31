@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.android.softvisitingcardapp.R;
+import com.example.android.softvisitingcardapp.api.APIService;
+import com.example.android.softvisitingcardapp.api.APIUrl;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -30,8 +32,7 @@ public class GalleryFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        // get userEmail sent from CardGalleryActivity
-        userEmail = this.getArguments().getString("userEmail");
+
         return inflater.inflate(R.layout.fragment_home, container, false);
 
     }

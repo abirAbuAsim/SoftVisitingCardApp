@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 
 import com.example.android.softvisitingcardapp.R;
+import com.example.android.softvisitingcardapp.models.User;
 
 import java.util.List;
 
@@ -53,7 +54,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     public void onBindViewHolder(UserAdapter.ViewHolder holder, int position) {
         final User user = users.get(position);
         holder.textViewName.setText(user.getName());
-        holder.textViewUserName.setText(PeopleFragment.userEmail);
+        holder.textViewUserName.setText(user.getEmail());
 
         holder.imageButtonMessage.setOnClickListener(new View.OnClickListener() {
             @Override

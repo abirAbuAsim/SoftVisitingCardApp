@@ -2,6 +2,7 @@ package com.example.android.softvisitingcardapp.activity;
 
 import android.Manifest;
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -28,11 +29,26 @@ import com.example.android.softvisitingcardapp.ModelClass.EventModel;
 import com.example.android.softvisitingcardapp.ModelClass.CardSent;
 import com.example.android.softvisitingcardapp.NetworkRelatedClass.NetworkCall;
 import com.example.android.softvisitingcardapp.R;
+import com.example.android.softvisitingcardapp.api.APIService;
+import com.example.android.softvisitingcardapp.api.APIUrl;
+import com.example.android.softvisitingcardapp.gallery.CardViewed;
+import com.example.android.softvisitingcardapp.helper.SharedPrefManager;
+import com.example.android.softvisitingcardapp.models.Result;
+import com.example.android.softvisitingcardapp.models.User;
 
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
+import static android.R.attr.logo;
+import static android.R.attr.password;
 
 
 public class CreateActivity extends AppCompatActivity {
@@ -44,8 +60,8 @@ public class CreateActivity extends AppCompatActivity {
     private ImageView logoImage, backgroundImage;
     String mediaPath;
 
-    private SharedPreferences pref;
-    String cardMakerEmail;
+
+
 
     private String filePath;
     private int backgroundImageID;
@@ -69,16 +85,6 @@ public class CreateActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create);
-        /*
-        Fragment fragment = new CardCreateFragment();
-        FragmentTransaction ft = getFragmentManager().beginTransaction();
-        ft.replace(R.id.fragment_frame,fragment);
-        ft.commit();
-        */
-
-        // get the preferences
-        //pref = this.getPreferences(0);
-
 
 
         Bundle extras = getIntent().getExtras();
@@ -86,8 +92,8 @@ public class CreateActivity extends AppCompatActivity {
             return;
         }
         int res = extras.getInt("res");
-        final String userEmail = extras.getString("userEmail");
-        cardMakerEmail = userEmail;
+
+
 
         ImageView templateImage = (ImageView) findViewById(R.id.card_background_image_view);
         templateImage.setImageResource(res);
@@ -302,8 +308,74 @@ public class CreateActivity extends AppCompatActivity {
         //String cardMakerEmail= userDetails.getString(Constants.EMAIL, "");
         //String cardMakerEmail= "abir.sakif@gmail.com";
 
+        String cardMakerEmail = SharedPrefManager.getInstance(this).getUser().getEmail();
+
         NetworkCall.fileUpload(filePath, new CardSent(name, email, designation, contact,
                 website, address, organization, backgroundImageName,logoImage, cardMakerEmail));
+
+
+
+        // Create card using api package
+
+        //calling the api
+        //defining a progress dialog to show while signing up
+        final ProgressDialog progressDialog = new ProgressDialog(this);
+        progressDialog.setMessage("Creating card, please wait ...");
+        progressDialog.show();
+
+        //building retrofit object
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(APIUrl.BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        //Defining retrofit api service
+        APIService service = retrofit.create(APIService.class);
+
+        //Defining the user object as we need to pass it with the call
+        // sending card id as -1 as default value
+        CardViewed card = new CardViewed(-1, name, email, designation, contact, website, address,
+                                        organization, backgroundImageName, logoImage, cardMakerEmail);
+
+        //defining the call
+        Call<Result> call = service.createCard(
+                card.getName(),
+                card.getEmail(),
+                card.getDesignation(),
+                card.getContact(),
+                card.getWebsite(),
+                card.getAddress(),
+                card.getOrganization(),
+                card.getBackgroundImage(),
+                card.getLogoImage(),
+                card.getCardMakerEmail()
+        );
+
+
+        call.enqueue(new Callback<Result>() {
+            @Override
+            public void onResponse(Call<Result> call, Response<Result> response) {
+                //hiding progress dialog
+                progressDialog.dismiss();
+
+                //displaying the message from the response as toast
+                Toast.makeText(getApplicationContext(), response.body().getMessage(), Toast.LENGTH_LONG).show();
+
+                //if there is no error
+                if (!response.body().getError()) {
+                    //starting profile activity
+                    finish();
+
+                    startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Result> call, Throwable t) {
+                progressDialog.dismiss();
+                Toast.makeText(getApplicationContext(), t.getMessage(), Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     private String getPath(Uri uri) {
@@ -347,22 +419,7 @@ public class CreateActivity extends AppCompatActivity {
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu options from the res/menu/menu_editor.xml file.
-        // This adds menu items to the app bar.
-        getMenuInflater().inflate(R.menu.menu_create_card, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // User clicked on a menu option in the app bar overflow menu
-        switch (item.getItemId()) {
-            // Respond to a click on the "Save" menu option
-            case R.id.action_save:
-                return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
+
+
 }

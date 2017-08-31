@@ -10,8 +10,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.android.softvisitingcardapp.R;
-import com.example.android.softvisitingcardapp.people.*;
-import com.example.android.softvisitingcardapp.people.APIService;
+import com.example.android.softvisitingcardapp.api.APIService;
+import com.example.android.softvisitingcardapp.api.APIUrl;
+import com.example.android.softvisitingcardapp.helper.SharedPrefManager;
+import com.example.android.softvisitingcardapp.models.Users;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -34,7 +36,7 @@ public class OtherUsersFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         // get userEmail sent from LinkedPeopleActivity
-        userEmail = this.getArguments().getString("userEmail");
+        userEmail = SharedPrefManager.getInstance(getActivity()).getUser().getEmail();
         cardId = this.getArguments().getInt("cardId");
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
@@ -51,11 +53,11 @@ public class OtherUsersFragment extends Fragment {
 
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(com.example.android.softvisitingcardapp.people.APIUrl.BASE_URL)
+                .baseUrl(APIUrl.BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
-        com.example.android.softvisitingcardapp.people.APIService service = retrofit.create(APIService.class);
+        APIService service = retrofit.create(APIService.class);
 
 
         Call<Users> call = service.getOtherUsers(userEmail);

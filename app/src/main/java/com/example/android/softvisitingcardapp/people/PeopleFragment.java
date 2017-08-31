@@ -11,12 +11,18 @@ import android.view.ViewGroup;
 
 
 import com.example.android.softvisitingcardapp.R;
+import com.example.android.softvisitingcardapp.api.APIService;
+import com.example.android.softvisitingcardapp.api.APIUrl;
+import com.example.android.softvisitingcardapp.helper.SharedPrefManager;
+import com.example.android.softvisitingcardapp.models.Users;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+
+import static com.example.android.softvisitingcardapp.helper.SharedPrefManager.*;
 
 /**
  * Created by Belal on 14/04/17.
@@ -33,8 +39,8 @@ public class PeopleFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         // get userEmail sent from LinkedPeopleActivity
-        userEmail = this.getArguments().getString("userEmail");
-        cardId = this.getArguments().getInt("cardId");
+        userEmail = getInstance(getActivity()).getUser().getEmail();
+
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
