@@ -92,14 +92,15 @@
                 android:value=".activity.SelectDesignActivity" />
         </activity>
         <activity android:name=".activity.TestActivity" />
-
         <activity android:name=".activity.SignInActivity" />
         <activity android:name=".activity.SignUpActivity" />
         <activity
             android:name=".activity.HomeActivity"
             android:label="@string/title_activity_home"
-            android:theme="@style/HomeTheme"></activity>
+            android:theme="@style/HomeTheme" />
+        <activity android:name=".activity.MyCardsActivity" />
+        <activity android:name=".activity.SharedCardsActivity" />
+        <activity android:name=".activity.CardDetailActivity"></activity>
     </application>
-
 
 </manifest>

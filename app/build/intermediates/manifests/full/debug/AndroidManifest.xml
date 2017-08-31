@@ -108,6 +108,9 @@
             android:name="com.example.android.softvisitingcardapp.activity.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/HomeTheme" />
+        <activity android:name="com.example.android.softvisitingcardapp.activity.MyCardsActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.activity.SharedCardsActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.activity.CardDetailActivity" />
     </application>
 
 </manifest>

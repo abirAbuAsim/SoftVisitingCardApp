@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.android.softvisitingcardapp.R;
+import com.example.android.softvisitingcardapp.fragment.HomeMenuFragment;
 import com.example.android.softvisitingcardapp.fragment.MessageFragment;
 import com.example.android.softvisitingcardapp.fragment.ProfileFragment;
 import com.example.android.softvisitingcardapp.helper.SharedPrefManager;

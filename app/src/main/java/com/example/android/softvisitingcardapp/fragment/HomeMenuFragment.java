@@ -1,4 +1,4 @@
-package com.example.android.softvisitingcardapp.activity;
+package com.example.android.softvisitingcardapp.fragment;
 
 
 import android.content.Intent;
@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.android.softvisitingcardapp.R;
+import com.example.android.softvisitingcardapp.activity.AboutUsActivity;
+import com.example.android.softvisitingcardapp.activity.SelectDesignActivity;
 import com.example.android.softvisitingcardapp.gallery.CardGalleryActivity;
 import com.example.android.softvisitingcardapp.helper.SharedPrefManager;
 import com.example.android.softvisitingcardapp.people.LinkedPeopleActivity;

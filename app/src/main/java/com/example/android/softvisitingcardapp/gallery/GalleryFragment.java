@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import com.example.android.softvisitingcardapp.R;
 import com.example.android.softvisitingcardapp.api.APIService;
 import com.example.android.softvisitingcardapp.api.APIUrl;
+import com.example.android.softvisitingcardapp.helper.SharedPrefManager;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -32,7 +33,7 @@ public class GalleryFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
+        userEmail = SharedPrefManager.getInstance(getActivity()).getUser().getEmail();
         return inflater.inflate(R.layout.fragment_home, container, false);
 
     }
@@ -55,8 +56,8 @@ public class GalleryFragment extends Fragment {
 
         APIService service = retrofit.create(APIService.class);
 
-
-        Call<Cards> call = service.getCards();
+        //String email = SharedPrefManager.getInstance(getActivity()).getUser().getEmail();
+        Call<Cards> call = service.getAllMyCards(userEmail);
 
         call.enqueue(new Callback<Cards>() {
             @Override

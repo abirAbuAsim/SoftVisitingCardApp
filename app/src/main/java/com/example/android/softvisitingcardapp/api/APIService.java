@@ -98,6 +98,14 @@ public interface APIService {
     @GET("cards")
     Call<Cards> getCards();
 
+    // Gets the cards which the user has created
+    @GET("cards/{email}")
+    Call<Cards> getAllMyCards(@Path("email") String email);
+
+    // Gets the cards which the user has created
+    @GET("sharedcards/{email}")
+    Call<Cards> getSharedCards(@Path("email") String email);
+
     @FormUrlEncoded
     @POST("sendcard")
     Call<MessageResponse> sendCard(

@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 
 import com.example.android.softvisitingcardapp.R;
+import com.example.android.softvisitingcardapp.activity.CardDetailActivity;
 import com.example.android.softvisitingcardapp.people.LinkedPeopleActivity;
 import com.example.android.softvisitingcardapp.people.OtherUsersActivity;
 
@@ -62,7 +63,7 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent cardIntent = new Intent(mCtx, OtherUsersActivity.class);
+                Intent cardIntent = new Intent(mCtx, CardDetailActivity.class);
                 // send the card at the selected position in bundle
                 cardIntent.putExtra("cardId", card.getId());
                 mCtx.startActivity(cardIntent);
