@@ -16,6 +16,9 @@ import com.example.android.softvisitingcardapp.R;
 import com.example.android.softvisitingcardapp.activity.CardDetailActivity;
 import com.example.android.softvisitingcardapp.people.LinkedPeopleActivity;
 import com.example.android.softvisitingcardapp.people.OtherUsersActivity;
+import com.squareup.picasso.Picasso;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -27,6 +30,9 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
 
     private ArrayList<CardViewed> cards;
     private Context mCtx;
+
+    private String imageURL = "https://card.thehumblelearner.com/file_upload_api/files/";
+    private String logoImagePath;
 
     public CardAdapter(ArrayList<CardViewed> cards, Context mCtx) {
         this.cards = cards;
@@ -44,21 +50,24 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
     public void onBindViewHolder(CardAdapter.ViewHolder holder, int position) {
         final CardViewed card = cards.get(position);
         holder.nameTextView.setText(card.getName());
+        holder.organizationTextView.setText(card.getOrganization());
         holder.designationTextView.setText(card.getDesignation());
+        holder.addressTextView.setText(card.getAddress());
+        holder.websiteTextView.setText(card.getWebsite());
         holder.emailTextView.setText(card.getEmail());
         holder.contactTextView.setText(card.getContact());
 
         String uri = "@drawable/" + card.getBackgroundImage();
 
-        int imageResource = mCtx.getResources().getIdentifier(uri, null, mCtx.getPackageName());
+        final int imageResource = mCtx.getResources().getIdentifier(uri, null, mCtx.getPackageName());
 
 
-        Drawable res = mCtx.getResources().getDrawable(imageResource);
-
+        final Drawable res = mCtx.getResources().getDrawable(imageResource);
 
         holder.backgroundImage.setImageDrawable(res);
 
-
+        logoImagePath = card.getLogoImage();
+        Picasso.with(mCtx).load(imageURL+logoImagePath).into(holder.logoImage);
 
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,6 +75,15 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
                 Intent cardIntent = new Intent(mCtx, CardDetailActivity.class);
                 // send the card at the selected position in bundle
                 cardIntent.putExtra("cardId", card.getId());
+                cardIntent.putExtra("cardName", card.getName());
+                cardIntent.putExtra("cardEmail", card.getEmail());
+                cardIntent.putExtra("cardDesignation", card.getDesignation());
+                cardIntent.putExtra("cardContact", card.getContact());
+                cardIntent.putExtra("cardWebsite", card.getWebsite());
+                cardIntent.putExtra("cardAddress", card.getAddress());
+                cardIntent.putExtra("cardOrganization", card.getOrganization());
+                cardIntent.putExtra("imageResource", imageResource);
+                cardIntent.putExtra("logoImagePath", card.getLogoImage());
                 mCtx.startActivity(cardIntent);
 
             }
@@ -119,7 +137,8 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         public TextView nameTextView, designationTextView, emailTextView, contactTextView;
-        public ImageView backgroundImage;
+        public TextView organizationTextView, addressTextView, websiteTextView;
+        public ImageView backgroundImage, logoImage;
 
         // Initialize the card view in the list
         public CardView cardView;
@@ -129,13 +148,17 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
             super(itemView);
 
             nameTextView = (TextView) itemView.findViewById(R.id.name_text_view);
+            organizationTextView = (TextView) itemView.findViewById(R.id.company_text_view);
             designationTextView = (TextView) itemView.findViewById(R.id.designation_text_view);
+            addressTextView = (TextView) itemView.findViewById(R.id.address_text_view);
+            websiteTextView = (TextView) itemView.findViewById(R.id.website_text_view);
             emailTextView = (TextView) itemView.findViewById(R.id.email_text_view);
             contactTextView = (TextView) itemView.findViewById(R.id.contact_text_view);
 
             backgroundImage = (ImageView) itemView.findViewById(R.id.card_background_image_view);
+            logoImage = (ImageView) itemView.findViewById(R.id.logo_image);
 
-            cardView = (CardView) itemView.findViewById(R.id.card_gallery_card_view);
+            cardView = (CardView) itemView.findViewById(R.id.card);
 
             //imageButtonMessage = (ImageButton) itemView.findViewById(R.id.imageButtonMessage);
         }

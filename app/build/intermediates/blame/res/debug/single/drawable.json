@@ -28,6 +28,10 @@
         "source": "C:\\Users\\absak\\.android\\build-cache\\c46b1a218de6069cada6e14feebea55a3311d3f6\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
     },
     {
+        "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\delete_icon.png",
+        "source": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\src\\main\\res\\drawable\\delete_icon.png"
+    },
+    {
         "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
         "source": "C:\\Users\\absak\\.android\\build-cache\\c46b1a218de6069cada6e14feebea55a3311d3f6\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
@@ -58,6 +62,10 @@
     {
         "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
         "source": "C:\\Users\\absak\\.android\\build-cache\\c46b1a218de6069cada6e14feebea55a3311d3f6\\output\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\email_icon.png",
+        "source": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\src\\main\\res\\drawable\\email_icon.png"
     },
     {
         "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
@@ -144,6 +152,10 @@
         "source": "C:\\Users\\absak\\.android\\build-cache\\c46b1a218de6069cada6e14feebea55a3311d3f6\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
+        "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\share_icon.png",
+        "source": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\src\\main\\res\\drawable\\share_icon.png"
+    },
+    {
         "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
         "source": "C:\\Users\\absak\\.android\\build-cache\\c46b1a218de6069cada6e14feebea55a3311d3f6\\output\\res\\drawable\\notification_icon_background.xml"
     },
@@ -158,6 +170,10 @@
     {
         "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
         "source": "C:\\Users\\absak\\.android\\build-cache\\c46b1a218de6069cada6e14feebea55a3311d3f6\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\paper_plane.png",
+        "source": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\src\\main\\res\\drawable\\paper_plane.png"
     },
     {
         "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mail.png",
@@ -230,5 +246,9 @@
     {
         "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\white_background.png",
         "source": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\src\\main\\res\\drawable\\white_background.png"
+    },
+    {
+        "merged": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\call_icon.png",
+        "source": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\src\\main\\res\\drawable\\call_icon.png"
     }
 ]

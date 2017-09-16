@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.softvisitingcardapp.activity.DeleteCardActivity"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/white_background"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/confirm_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textAlignment="center"
+            android:text="@string/confirm_delete"
+            android:layout_margin="8dp"
+            android:padding="32dp"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:textColor="#000000"/>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:layout_margin="16dp">
+           <ImageView
+               android:id="@+id/delete_icon_image"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               app:srcCompat="@drawable/delete_icon"
+               android:layout_centerHorizontal="true"
+               tools:layout_editor_absoluteY="206dp"
+               tools:layout_editor_absoluteX="115dp" />
+       </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_margin="16dp">
+            <Button
+                android:id="@+id/discard_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorPrimary"/>
+
+            <Button
+                android:id="@+id/confirm_delete_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:text="Delete"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -254,7 +254,7 @@ public class CreateActivity extends AppCompatActivity {
 
         // Editing the email and seeing the change in the card
         contactEditText = (EditText) findViewById(R.id.contact_edit_text);
-        final TextView mobileNumberTextView = (TextView) findViewById(R.id.mobile_number_text_view);
+        final TextView mobileNumberTextView = (TextView) findViewById(R.id.company_text_view);
         contactEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void onTextChanged(CharSequence s, int start, int before,

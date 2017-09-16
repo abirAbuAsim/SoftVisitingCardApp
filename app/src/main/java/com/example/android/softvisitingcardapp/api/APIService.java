@@ -83,6 +83,25 @@ public interface APIService {
             @Field("password") String password
     );
 
+    @FormUrlEncoded
+    @POST("updatecard/{id}")
+    Call<Result> updateCard(
+            @Path("id") int id,
+            @Field("name") String name,
+            @Field("email") String email,
+            @Field("designation") String designation,
+            @Field("contact") String contact,
+            @Field("website") String website,
+            @Field("address") String address,
+            @Field("organization") String organization
+    );
+
+    @FormUrlEncoded
+    @POST("deletecard")
+    Call<Result> deleteCard(
+            @Field("id") int id
+    );
+
     //getting messages
     @GET("messages/{id}")
     Call<Messages> getMessages(@Path("id") int id);

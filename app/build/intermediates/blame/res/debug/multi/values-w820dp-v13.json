@@ -11,13 +11,25 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "file": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\src\\main\\res\\values-w820dp\\dimens.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 113,
+                    "endColumn": 82,
+                    "endOffset": 191
+                },
+                "from": {
+                    "file": "C:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\src\\main\\res\\values-w820dp\\strings.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 295,
-                        "endColumn": 57,
-                        "endOffset": 348
+                        "startOffset": 57,
+                        "endColumn": 82,
+                        "endOffset": 135
                     }
                 }
             }
