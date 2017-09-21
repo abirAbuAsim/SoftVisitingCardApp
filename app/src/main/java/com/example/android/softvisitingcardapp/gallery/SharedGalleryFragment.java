@@ -62,7 +62,7 @@ public class SharedGalleryFragment extends Fragment {
         call.enqueue(new Callback<Cards>() {
             @Override
             public void onResponse(Call<Cards> call, Response<Cards> response) {
-                adapter = new CardAdapter(response.body().getCards(), getActivity());
+                adapter = new SharedCardAdapter(response.body().getCards(), getActivity());
                 recyclerViewUsers.setAdapter(adapter);
             }
 

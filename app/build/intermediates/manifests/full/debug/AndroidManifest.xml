@@ -113,6 +113,7 @@
         <activity android:name="com.example.android.softvisitingcardapp.activity.MyCardsActivity" />
         <activity android:name="com.example.android.softvisitingcardapp.activity.SharedCardsActivity" />
         <activity android:name="com.example.android.softvisitingcardapp.activity.CardDetailActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.activity.SharedCardDetailActivity" />
         <activity android:name="com.example.android.softvisitingcardapp.activity.UpdateCardActivity" />
         <activity android:name="com.example.android.softvisitingcardapp.activity.DeleteCardActivity" />
     </application>

@@ -103,6 +103,7 @@
         <activity android:name=".activity.MyCardsActivity" />
         <activity android:name=".activity.SharedCardsActivity" />
         <activity android:name=".activity.CardDetailActivity" />
+        <activity android:name=".activity.SharedCardDetailActivity" />
         <activity android:name=".activity.UpdateCardActivity" />
         <activity android:name=".activity.DeleteCardActivity"></activity>
     </application>

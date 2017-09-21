@@ -7,12 +7,17 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.TypedArray;
+import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
+import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Build;
+import android.os.Environment;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -31,6 +36,12 @@ import com.squareup.picasso.Picasso;
 
 import org.w3c.dom.Text;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Date;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -48,7 +59,8 @@ public class CardDetailActivity extends AppCompatActivity implements View.OnClic
     private TextView nameTextView, organizationTextView, designationTextView;
     private TextView addressTextView, websiteTextView, emailTextView, contactTextView;
     private int cardId;
-    private String cardName, cardEmail, cardDesignation, cardContact, cardWebsite, cardAddress, cardOrganization;
+    private String cardName, cardEmail, cardDesignation, cardContact;
+    private String cardWebsite, cardAddress, cardOrganization, cardMakerEmail;
     private String imageURL = "https://card.thehumblelearner.com/file_upload_api/files/";
     private String logoImagePath;
     private ImageView shareIconImageView, emailIconImageView, callIconImageView;
@@ -76,6 +88,7 @@ public class CardDetailActivity extends AppCompatActivity implements View.OnClic
         cardWebsite = extras.getString("cardWebsite");
         cardAddress = extras.getString("cardAddress");
         cardOrganization = extras.getString("cardOrganization");
+        cardMakerEmail = extras.getString("cardMakerEmail");
 
         logoImagePath = extras.getString("logoImagePath");
 
@@ -115,11 +128,15 @@ public class CardDetailActivity extends AppCompatActivity implements View.OnClic
         emailIconImageView.setOnClickListener(this);
         //callIconImageView.setOnClickListener(this);
 
+        // Debug: test screenshot capture using this icon
+        callIconImageView.setOnClickListener(this);
+
         int[] attrs = new int[]{R.attr.selectableItemBackground};
         TypedArray typedArray = this.obtainStyledAttributes(attrs);
         int backgroundResource = typedArray.getResourceId(0, 0);
         shareIconImageView.setBackgroundResource(backgroundResource);
         emailIconImageView.setBackgroundResource(backgroundResource);
+        callIconImageView.setBackgroundResource(backgroundResource);
 
 
         // Find the Update button and set click listener
@@ -144,10 +161,10 @@ public class CardDetailActivity extends AppCompatActivity implements View.OnClic
 
         shareIconImageView = (ImageView) findViewById(R.id.share_icon_image_view);
         emailIconImageView = (ImageView) findViewById(R.id.email_icon_image_view);
-        //callIconImageView = (ImageView) findViewById(R.id.call_icon_image_view);
+        callIconImageView = (ImageView) findViewById(R.id.call_icon_image_view);
     }
 
-    private void deleteUser() {
+    private void deleteCard() {
         // Code here executes on main thread after user presses button
         final ProgressDialog progressDialog = new ProgressDialog(CardDetailActivity.this);
         progressDialog.setMessage("Deleting...");
@@ -185,6 +202,52 @@ public class CardDetailActivity extends AppCompatActivity implements View.OnClic
         });
     }
 
+    private void takeScreenshot() {
+        Date now = new Date();
+        android.text.format.DateFormat.format("yyyy-MM-dd_hh:mm:ss", now);
+
+        try {
+            // image naming and path  to include sd card  appending name you choose for file
+            String mPath = Environment.getExternalStorageDirectory().toString() + "/PICTURES/Screenshots/" + now + ".jpg";
+
+            // create bitmap screen capture
+            View v1 = getWindow().getDecorView().getRootView();
+            v1.setDrawingCacheEnabled(true);
+            Bitmap bitmap = Bitmap.createBitmap(v1.getDrawingCache());
+            v1.setDrawingCacheEnabled(false);
+            File imageFile = new File(mPath);
+            FileOutputStream outputStream = new FileOutputStream(imageFile);
+            int quality = 100;
+            bitmap.compress(Bitmap.CompressFormat.JPEG, quality, outputStream);
+            outputStream.flush();
+            outputStream.close();
+
+
+            MediaScannerConnection.scanFile(this,
+                    new String[]{imageFile.toString()}, null,
+                    new MediaScannerConnection.OnScanCompletedListener() {
+                        public void onScanCompleted(String path, Uri uri) {
+                            Log.i("ExternalStorage", "Scanned " + path + ":");
+                            Log.i("ExternalStorage", "-> uri=" + uri);
+                        }
+                    });
+
+            openScreenshot(imageFile);
+        } catch (Throwable e) {
+            // Several error may come out with file handling or OOM
+            e.printStackTrace();
+        }
+    }
+
+    private void openScreenshot(File imageFile) {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        Uri uri = Uri.fromFile(imageFile);
+        intent.setDataAndType(uri, "image/*");
+        startActivity(intent);
+    }
+
+
     @Override
     public void onClick(View view) {
         if (view == shareIconImageView) {
@@ -202,14 +265,7 @@ public class CardDetailActivity extends AppCompatActivity implements View.OnClic
 
             startActivity(Intent.createChooser(intent, "Send Email"));
         } else if (view == callIconImageView) {
-            Intent callIntent = new Intent(Intent.ACTION_CALL);
-            callIntent.setData(Uri.parse("tel:"+cardContact));
-
-            if (ActivityCompat.checkSelfPermission(CardDetailActivity.this,
-                    Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                return;
-            }
-            startActivity(callIntent);
+            takeScreenshot();
         }else if (view == updateButton) {
             // put the card info in a bundle
             Intent intent = new Intent(CardDetailActivity.this, UpdateCardActivity.class);
@@ -242,7 +298,7 @@ public class CardDetailActivity extends AppCompatActivity implements View.OnClic
                     .setPositiveButton("Delete",
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int id) {
-                                    deleteUser();
+                                    deleteCard();
                                     //getting the values
                                     //String title = editTextTitle.getText().toString().trim();
                                     //String message = editTextMessage.getText().toString().trim();

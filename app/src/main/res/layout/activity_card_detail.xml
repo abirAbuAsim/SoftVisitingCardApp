@@ -220,7 +220,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/update_delete_layout"
         android:orientation="horizontal"
-        android:weightSum="2">
+        android:weightSum="3">
 
         <ImageView
             android:id="@+id/share_icon_image_view"
@@ -238,15 +238,15 @@
             android:src="@drawable/email_icon"
             android:padding="32dp"
             android:background="?android:attr/selectableItemBackground"/>
-<!--
+
         <ImageView
             android:id="@+id/call_icon_image_view"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@drawable/call_icon"
-            android:padding="8dp"/>
--->
+            android:padding="32dp"
+            android:background="?android:attr/selectableItemBackground"/>
     </LinearLayout>
 
 </RelativeLayout>

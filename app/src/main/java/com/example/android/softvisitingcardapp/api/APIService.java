@@ -102,6 +102,14 @@ public interface APIService {
             @Field("id") int id
     );
 
+    @FormUrlEncoded
+    @POST("removesharedcard/{id}")
+    Call<Result> removeSharedCard(
+            @Path("id") int id,
+            @Field("sender_id") String senderEmail,
+            @Field("receiver_id") String receiverEmail
+    );
+
     //getting messages
     @GET("messages/{id}")
     Call<Messages> getMessages(@Path("id") int id);

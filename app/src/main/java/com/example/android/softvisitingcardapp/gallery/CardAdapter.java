@@ -84,6 +84,7 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
                 cardIntent.putExtra("cardOrganization", card.getOrganization());
                 cardIntent.putExtra("imageResource", imageResource);
                 cardIntent.putExtra("logoImagePath", card.getLogoImage());
+                cardIntent.putExtra("cardMakerEmail", card.getCardMakerEmail());
                 mCtx.startActivity(cardIntent);
 
             }
