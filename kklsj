@@ -1,0 +1,77 @@
+[33mcommit 95f6b3d11c66397079b1be78237e1aa132e1fb0a[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Abir Khan <abir.sakif@gmail.com>
+Date:   Thu Sep 21 09:47:13 2017 +0600
+
+    Remove shared card done
+
+[33mcommit 08ca5f62ff40bb82d1b883cdd9369988557f25c4[m
+Author: Abir Khan <abir.sakif@gmail.com>
+Date:   Sat Sep 16 10:35:17 2017 +0600
+
+    Delete Card successful
+
+[33mcommit 20c92cab773deb8d44b2f783f51ba96662924488[m
+Author: Abir Khan <abir.sakif@gmail.com>
+Date:   Thu Aug 31 18:04:32 2017 +0600
+
+    My cards and Shared cards added
+
+[33mcommit 45b8d707c6954bd62662ed0106b1b6b35ec0757b[m
+Author: Abir Khan <abir.sakif@gmail.com>
+Date:   Thu Aug 31 12:44:03 2017 +0600
+
+    Host on sub-domain, re-structure
+
+[33mcommit adee40ce789bbc6d8fc64ab1989e3a8310e65307[m
+Author: Abir Khan <abir.sakif@gmail.com>
+Date:   Sun Aug 27 23:39:29 2017 +0600
+
+    Changed user login and register
+
+[33mcommit 9d123a23e1f01a402919149dde7915403248d99d[m
+Author: Abir Khan <abir.sakif@gmail.com>
+Date:   Sun Aug 27 07:34:39 2017 +0600
+
+    Card Share and Show linked users
+
+[33mcommit dc954419047b3a43185ffb258b13386fcc0e6548[m
+Author: Abir Khan <abir.sakif@gmail.com>
+Date:   Thu Aug 24 23:37:33 2017 +0600
+
+    Display cards and users in List
+
+[33mcommit 44064f7456590a847c990156415fa5a3f8103ce4[m
+Author: Abir Khan <abir.sakif@gmail.com>
+Date:   Mon Jul 31 18:31:38 2017 +0600
+
+    Add User login and register
+
+[33mcommit a4d8164f05f49ffcc5fc657e2b36c564e7f511a4[m
+Author: Abir Khan <abir.sakif@gmail.com>
+Date:   Mon Jul 31 09:32:00 2017 +0600
+
+    Add .gitignore file, Remove button from Create Activity
+
+[33mcommit e4cc4c973d0b64b4452721ef1a5b8ff4af4c7bce[m
+Author: Abir Khan <abir.sakif@gmail.com>
+Date:   Tue Jul 25 19:14:53 2017 +0600
+
+    Add listView to LinkedPeopleActivity offline
+
+[33mcommit fa2873a675607e3db9abe98df490e2fceea1c2bb[m
+Author: Abir Khan <abir.sakif@gmail.com>
+Date:   Tue Jul 25 16:31:00 2017 +0600
+
+    Add Card Info from Create Activity
+
+[33mcommit 8a37c333f815a9a8b667f8a6a14bea4995a5b20d[m
+Author: Abir Khan <abir.sakif@gmail.com>
+Date:   Thu Jul 20 09:31:36 2017 +0600
+
+    Add click listeners on menu options
+
+[33mcommit 5599cc4660248843fb93f5d153898250055c304f[m
+Author: Abir Khan <abir.sakif@gmail.com>
+Date:   Thu Jul 20 00:56:07 2017 +0600
+
+    Initial commit, Add main menu layout

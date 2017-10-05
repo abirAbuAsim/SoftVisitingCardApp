@@ -15,6 +15,9 @@ import android.widget.Toast;
 
 
 import com.example.android.softvisitingcardapp.R;
+import com.example.android.softvisitingcardapp.api.APIService;
+import com.example.android.softvisitingcardapp.api.APIUrl;
+import com.example.android.softvisitingcardapp.models.MessageResponse;
 import com.example.android.softvisitingcardapp.models.User;
 
 import java.util.List;
@@ -96,7 +99,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     }
 
     //method to send message to the user
-    /*private void sendMessage(String receiverEmail) {
+    private void sendMessage(String receiverEmail) {
 
         final ProgressDialog progressDialog = new ProgressDialog(mCtx);
         progressDialog.setMessage("Sending Message...");
@@ -129,7 +132,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
                 Toast.makeText(mCtx, t.getMessage(), Toast.LENGTH_LONG).show();
             }
         });
-    }*/
+    }
 
     @Override
     public int getItemCount() {

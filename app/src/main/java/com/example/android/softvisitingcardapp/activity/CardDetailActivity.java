@@ -1,6 +1,7 @@
 package com.example.android.softvisitingcardapp.activity;
 
 import android.Manifest;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
@@ -22,6 +23,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -40,8 +42,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.util.Date;
+import java.util.Locale;
 
+import github.nisrulz.screenshott.ScreenShott;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -63,9 +68,17 @@ public class CardDetailActivity extends AppCompatActivity implements View.OnClic
     private String cardWebsite, cardAddress, cardOrganization, cardMakerEmail;
     private String imageURL = "https://card.thehumblelearner.com/file_upload_api/files/";
     private String logoImagePath;
-    private ImageView shareIconImageView, emailIconImageView, callIconImageView;
+    private ImageView shareIconImageView, bluetoothIconImageView, emailIconImageView, callIconImageView;
+    private LinearLayout addressLayout, websiteLayout, emailLayout, contactLayout;
+
+    private CardView userCardView;
 
     private ImageView backgroundImage, logoImage;
+
+    private static final int REQUEST_EXTERNAL_STORAGE = 1;
+    private static String[] PERMISSIONS_STORAGE = {
+            Manifest.permission.WRITE_EXTERNAL_STORAGE
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,6 +108,8 @@ public class CardDetailActivity extends AppCompatActivity implements View.OnClic
         // Initialize the views
         initViews();
 
+        verifyStoragePermissions(this);
+
         // Set the TextViews from the bundle info
         // maintain the order as seen in the UI
         nameTextView.setText(cardName);
@@ -121,22 +136,78 @@ public class CardDetailActivity extends AppCompatActivity implements View.OnClic
         logoImage = (ImageView) findViewById(R.id.logo_image);
         Picasso.with(CardDetailActivity.this).load(imageURL + logoImagePath).into(logoImage);
 
+        // set listeners on the layout containing the text views and icons
+
+        // when clicked opens the map with the card holders office address
+        addressLayout.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                String map = "http://maps.google.co.in/maps?q=" + cardAddress;
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(map));
+                startActivity(intent);
+
+            }
+        });
+
+        // when clicked it will open the website link with existing browsers
+        websiteLayout.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                String url = cardWebsite;
+                if (!url.startsWith("http://") && !url.startsWith("https://"))
+                    url = "http://" + url;
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity(browserIntent);
+
+            }
+        });
+
+        // when clicked it will open the email app to send email to the card holder
+        emailLayout.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                // Make an email intent to send order summary to the email
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("text/plain");
+                intent.putExtra(Intent.EXTRA_EMAIL, new String[]{cardEmail});
+                intent.putExtra(Intent.EXTRA_SUBJECT, "Interested to connect");
+
+                startActivity(Intent.createChooser(intent, "Send Email"));
+
+            }
+        });
+        contactLayout.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel:"+cardContact));
+                startActivity(callIntent);
+
+            }
+        });
 
         // Find the Online Share button and set click listener
         //onlineShareButton = (Button) findViewById(R.id.online_share);
         shareIconImageView.setOnClickListener(this);
-        emailIconImageView.setOnClickListener(this);
+        bluetoothIconImageView.setOnClickListener(this);
+        //emailIconImageView.setOnClickListener(this);
         //callIconImageView.setOnClickListener(this);
 
-        // Debug: test screenshot capture using this icon
-        callIconImageView.setOnClickListener(this);
 
         int[] attrs = new int[]{R.attr.selectableItemBackground};
         TypedArray typedArray = this.obtainStyledAttributes(attrs);
         int backgroundResource = typedArray.getResourceId(0, 0);
         shareIconImageView.setBackgroundResource(backgroundResource);
-        emailIconImageView.setBackgroundResource(backgroundResource);
-        callIconImageView.setBackgroundResource(backgroundResource);
+        bluetoothIconImageView.setBackgroundResource(backgroundResource);
+        //emailIconImageView.setBackgroundResource(backgroundResource);
+        //callIconImageView.setBackgroundResource(backgroundResource);
 
 
         // Find the Update button and set click listener
@@ -159,9 +230,18 @@ public class CardDetailActivity extends AppCompatActivity implements View.OnClic
         emailTextView = (TextView) findViewById(R.id.email_text_view);
         contactTextView = (TextView) findViewById(R.id.contact_text_view);
 
+        addressLayout = (LinearLayout) findViewById(R.id.address_layout);
+        websiteLayout = (LinearLayout) findViewById(R.id.website_layout);
+        emailLayout = (LinearLayout) findViewById(R.id.email_layout);
+        contactLayout = (LinearLayout) findViewById(R.id.contact_layout);
+
         shareIconImageView = (ImageView) findViewById(R.id.share_icon_image_view);
-        emailIconImageView = (ImageView) findViewById(R.id.email_icon_image_view);
-        callIconImageView = (ImageView) findViewById(R.id.call_icon_image_view);
+        bluetoothIconImageView = (ImageView) findViewById(R.id.bluetooth_icon_image_view);
+
+        //emailIconImageView = (ImageView) findViewById(R.id.email_icon_image_view);
+        //callIconImageView = (ImageView) findViewById(R.id.call_icon_image_view);
+
+        userCardView = (CardView) findViewById(R.id.card);
     }
 
     private void deleteCard() {
@@ -264,8 +344,39 @@ public class CardDetailActivity extends AppCompatActivity implements View.OnClic
             intent.putExtra(Intent.EXTRA_SUBJECT, "Interested to connect");
 
             startActivity(Intent.createChooser(intent, "Send Email"));
-        } else if (view == callIconImageView) {
-            takeScreenshot();
+        } else if (view == bluetoothIconImageView) {
+            // View with spaces as per constraints
+            Bitmap bitmap_view = ScreenShott.getInstance().takeScreenShotOfView(userCardView);
+            OutputStream output;
+            try {
+                File file = ScreenShott.getInstance().saveScreenshotToPicturesFolder(this, bitmap_view, cardName + "-business card");
+                String bitmapFilePath = file.getAbsolutePath();
+                Toast.makeText(this, "Offline card created in " + bitmapFilePath, Toast.LENGTH_LONG).show();
+                // Share Intent
+                Intent share = new Intent(Intent.ACTION_SEND);
+
+                // Type of file to share
+                share.setType("image/jpeg");
+
+                /*
+                // Compress into png format image from 0% - 100%
+                bitmap.compress(Bitmap.CompressFormat.PNG, 100, output);
+                output.flush();
+                output.close();
+                */
+
+                // Locate the image to Share
+                Uri uri = Uri.fromFile(file);
+
+                // Pass the image into an Intnet
+                share.putExtra(Intent.EXTRA_STREAM, uri);
+
+                // Show the social share chooser list
+                startActivity(Intent.createChooser(share, "Send Card offline"));
+            } catch (Exception e) {
+                e.printStackTrace();
+                Toast.makeText(this, "No screenshots", Toast.LENGTH_LONG).show();
+            }
         }else if (view == updateButton) {
             // put the card info in a bundle
             Intent intent = new Intent(CardDetailActivity.this, UpdateCardActivity.class);
@@ -315,6 +426,27 @@ public class CardDetailActivity extends AppCompatActivity implements View.OnClic
                             });
             AlertDialog alertDialog = alertDialogBuilder.create();
             alertDialog.show();
+        }
+    }
+
+    /**
+     * Checks if the app has permission to write to device storage
+     *
+     * If the app does not has permission then the user will be prompted to grant permissions
+     *
+     * @param activity
+     */
+    public static void verifyStoragePermissions(Activity activity) {
+        // Check if we have write permission
+        int permission = ActivityCompat.checkSelfPermission(activity, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+
+        if (permission != PackageManager.PERMISSION_GRANTED) {
+            // We don't have permission so prompt the user
+            ActivityCompat.requestPermissions(
+                    activity,
+                    PERMISSIONS_STORAGE,
+                    REQUEST_EXTERNAL_STORAGE
+            );
         }
     }
 }

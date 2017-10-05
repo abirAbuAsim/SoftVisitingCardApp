@@ -1,4 +1,4 @@
-#Thu Sep 21 08:23:16 BDT 2017
-base.0=C\:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+#Thu Oct 05 09:13:21 BDT 2017
+base.0=C\:\\Users\\abirs\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
-file.0=C\:\\Users\\absak\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+file.0=C\:\\Users\\abirs\\Desktop\\Arif_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

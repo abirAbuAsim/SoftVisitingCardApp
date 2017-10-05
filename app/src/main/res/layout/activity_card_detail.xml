@@ -83,6 +83,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/address_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -108,6 +109,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/website_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -132,6 +134,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/email_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -156,6 +159,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/contact_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -220,7 +224,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/update_delete_layout"
         android:orientation="horizontal"
-        android:weightSum="3">
+        android:weightSum="2">
 
         <ImageView
             android:id="@+id/share_icon_image_view"
@@ -231,22 +235,14 @@
             android:padding="32dp"
             android:background="?android:attr/selectableItemBackground" />
         <ImageView
-            android:id="@+id/email_icon_image_view"
+            android:id="@+id/bluetooth_icon_image_view"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/email_icon"
+            android:src="@drawable/bluetooth"
             android:padding="32dp"
             android:background="?android:attr/selectableItemBackground"/>
 
-        <ImageView
-            android:id="@+id/call_icon_image_view"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/call_icon"
-            android:padding="32dp"
-            android:background="?android:attr/selectableItemBackground"/>
     </LinearLayout>
 
 </RelativeLayout>

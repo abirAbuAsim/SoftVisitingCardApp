@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.softvisitingcardapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.android.softvisitingcardapp.activity.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.android.softvisitingcardapp.gallery.CardGalleryActivity"
+            android:label="Card Gallery"
+            android:parentActivityName="com.example.android.softvisitingcardapp.activity.MainActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.android.softvisitingcardapp.people.LinkedPeopleActivity"
+            android:label="Linked People"
+            android:parentActivityName="com.example.android.softvisitingcardapp.activity.MainActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.android.softvisitingcardapp.people.OtherUsersActivity"
+            android:parentActivityName="com.example.android.softvisitingcardapp.gallery.CardGalleryActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".gallery.CardGalleryActivity" />
+        </activity>
+        <activity
+            android:name="com.example.android.softvisitingcardapp.activity.CreateActivity"
+            android:label="Create Card"
+            android:parentActivityName="com.example.android.softvisitingcardapp.activity.PreviewDesignActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.PreviewDesignActivity" />
+        </activity>
+        <activity
+            android:name="com.example.android.softvisitingcardapp.activity.AboutUsActivity"
+            android:label="About Us"
+            android:parentActivityName="com.example.android.softvisitingcardapp.activity.MainActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.android.softvisitingcardapp.activity.SelectDesignActivity"
+            android:label="Select Design"
+            android:parentActivityName="com.example.android.softvisitingcardapp.activity.MainActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.android.softvisitingcardapp.activity.PreviewDesignActivity"
+            android:label="Preview Design"
+            android:parentActivityName="com.example.android.softvisitingcardapp.activity.SelectDesignActivity" >
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.SelectDesignActivity" />
+        </activity>
+        <activity android:name="com.example.android.softvisitingcardapp.activity.TestActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.activity.SignInActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.activity.SignUpActivity" />
+        <activity
+            android:name="com.example.android.softvisitingcardapp.activity.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/HomeTheme" />
+        <activity android:name="com.example.android.softvisitingcardapp.activity.MyCardsActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.activity.SharedCardsActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.activity.CardDetailActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.activity.SharedCardDetailActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.activity.UpdateCardActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.activity.DeleteCardActivity" />
+
+        <provider
+            android:name="com.android.tools.fd.runtime.InstantRunContentProvider"
+            android:authorities="com.example.android.softvisitingcardapp.com.android.tools.fd.runtime.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>
