@@ -103,6 +103,13 @@ public interface APIService {
     );
 
     @FormUrlEncoded
+    @POST("removelinkeduser")
+    Call<Result> removeLinkedUser(
+            @Field("sender_id") String senderEmail,
+            @Field("receiver_id") String receiverEmail
+    );
+
+    @FormUrlEncoded
     @POST("removesharedcard/{id}")
     Call<Result> removeSharedCard(
             @Path("id") int id,

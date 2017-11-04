@@ -77,9 +77,9 @@ public class HomeActivity extends AppCompatActivity
             case R.id.nav_profile:
                 fragment = new ProfileFragment();
                 break;
-            case R.id.nav_messages:
+            /*case R.id.nav_messages:
                 fragment = new MessageFragment();
-                break;
+                break;*/
             case R.id.nav_logout:
                 logout();
                 break;

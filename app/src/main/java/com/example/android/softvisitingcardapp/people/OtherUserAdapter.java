@@ -48,7 +48,7 @@ public class OtherUserAdapter extends RecyclerView.Adapter<OtherUserAdapter.View
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.list_users, parent, false);
+                .inflate(R.layout.list_other_users, parent, false);
         return new ViewHolder(v);
     }
 

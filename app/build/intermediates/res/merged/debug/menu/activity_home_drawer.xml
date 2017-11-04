@@ -8,9 +8,11 @@
         <item
             android:id="@+id/nav_profile"
             android:title="Profile" />
+        <!--
         <item
             android:id="@+id/nav_messages"
             android:title="Messages" />
+            -->
         <item
             android:id="@+id/nav_logout"
             android:title="Logout" />

@@ -12,7 +12,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="4">
 
 
             <LinearLayout
@@ -48,12 +49,14 @@
                 android:layout_weight="1">
 
                 <ImageButton
-                    android:id="@+id/imageButtonMessage"
+                    android:id="@+id/delete_link_image_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
-                    android:background="@drawable/paper_plane" />
+                    android:layout_margin="8dp"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/delete" />
             </RelativeLayout>
 
         </LinearLayout>

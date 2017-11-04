@@ -48,6 +48,7 @@ public class PreviewDesignActivity extends AppCompatActivity {
 
         // For debugging purpose: go to test page
         Button goToTestPageButton = (Button) findViewById(R.id.go_to_test_page);
+        goToTestPageButton.setVisibility(View.GONE);
         goToTestPageButton.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the Create CardSent View is clicked on.
             @Override
