@@ -17,13 +17,8 @@ import android.widget.Toast;
 
 
 import com.example.android.softvisitingcardapp.R;
-import com.example.android.softvisitingcardapp.activity.CardDetailActivity;
-import com.example.android.softvisitingcardapp.activity.MainActivity;
-import com.example.android.softvisitingcardapp.activity.SharedCardDetailActivity;
 import com.example.android.softvisitingcardapp.api.APIService;
 import com.example.android.softvisitingcardapp.api.APIUrl;
-import com.example.android.softvisitingcardapp.helper.SharedPrefManager;
-import com.example.android.softvisitingcardapp.models.MessageResponse;
 import com.example.android.softvisitingcardapp.models.Result;
 import com.example.android.softvisitingcardapp.models.User;
 
@@ -34,10 +29,6 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-
-import static android.R.id.message;
-import static com.example.android.softvisitingcardapp.R.id.editTextMessage;
-import static com.example.android.softvisitingcardapp.R.id.editTextTitle;
 
 /**
  * Created by Belal on 14/04/17.

@@ -1,229 +1,303 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-111:12
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-111:12
+MERGED from [com.android.support:design:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\c3b0562e70f94c82c7ddc1d77894e405\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\a7b7d6a0b723972583a212a9b4ada4e6\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\49cb52d04320d33843c8c55fb42b07e1\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:transition:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\4f73b7a4e550b26779209cdf29e24cb4\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\4312827cd0a1ba482c10b8a15d1edf27\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\5d6c48773e5e33a8bdc29ef243acb9f4\AndroidManifest.xml:2:1-11:12
+MERGED from [com.orhanobut:logger:2.1.1] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\logger-2.1.1.aar\dac01429f4725015762f1349bea48828\AndroidManifest.xml:2:1-8:12
+MERGED from [com.github.nisrulz:screenshott:2.0.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\screenshott-2.0.0.aar\b34cd2d1997aa24b95fd285239dd0954\AndroidManifest.xml:17:1-30:12
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\e8cc8af40fb4b5cf7815fbcf4600ab59\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\a9655d37ec82654a029f02793e557d22\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\9eaac6a0c245c7db782bd8f7a3c348c3\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\e039a112535f704a4311b072ba1866ec\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\77b349e9f806f2ece9c59c424f0ed02a\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\4db37f3800b4e193b3f4352543663b34\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\815585af6828ea7746eb511519b2aa17\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\435f14d608885b81be10b7640dd8e541\AndroidManifest.xml:17:1-31:12
+INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-111:12
+INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-111:12
 	package
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:3:5-54
-		INJECTED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:3:5-54
+		INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
-	xmlns:android
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:11-69
+		INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-111:12
+		INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-111:12
+		INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.CALL_PHONE
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:5:5-69
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:5:5-69
 	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:5:22-66
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:5:22-66
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:6:5-67
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:6:5-67
 	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:7:5-79
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:7:5-79
 	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:7:22-76
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:7:22-76
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:8:5-81
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:8:5-81
 	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:8:22-78
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:8:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:9:5-80
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:9:5-80
 	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:9:22-77
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:9:22-77
 application
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:11:5-109:19
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\abirs\.android\build-cache\4f521a401f7513244c634a9866a57cebc4c3d300\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:design:25.3.1] C:\Users\abirs\.android\build-cache\370a42e7d6ca7c3a003db3c70c59e14b020e8811\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\abirs\.android\build-cache\c7c6f2c1b5f4ac90917cfacda3d8e943d4594988\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\abirs\.android\build-cache\68bc75be3f56683774862665a00d3d111da1bf29\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\abirs\.android\build-cache\2ba97183450360f4d03bb8e49dce0232f368862c\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:25.3.1] C:\Users\abirs\.android\build-cache\226d4712170530062597f09acd52f939974484c4\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\abirs\.android\build-cache\33730318c85742770d8b5d928d035f54a0ef67e3\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\abirs\.android\build-cache\badb705784db88b67520f978bb3ed7c476264674\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\abirs\.android\build-cache\5723eb05ae87b1c4ee8216badc9e8857c24960e2\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\abirs\.android\build-cache\84ee104bb46e3780df6a1402098888e6d2aa980a\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\abirs\.android\build-cache\0358cd5838846219c9d23dcb8b0d779e7ca3998c\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\abirs\.android\build-cache\29e96fb85b252166046d2254c8e315a041b1b8aa\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\abirs\.android\build-cache\cb8b68eed6eebe4f7c6256b6c24af525d21f2095\output\AndroidManifest.xml:9:5-20
-MERGED from [com.github.nisrulz:screenshott:2.0.0] C:\Users\abirs\.android\build-cache\8e23df849576cb0b6eadd64fd91af7c27a8a7ed2\output\AndroidManifest.xml:27:5-28:19
-	android:label
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:16:9-41
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:11:5-109:19
+MERGED from [com.android.support:design:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\c3b0562e70f94c82c7ddc1d77894e405\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\c3b0562e70f94c82c7ddc1d77894e405\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\a7b7d6a0b723972583a212a9b4ada4e6\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\a7b7d6a0b723972583a212a9b4ada4e6\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\49cb52d04320d33843c8c55fb42b07e1\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\49cb52d04320d33843c8c55fb42b07e1\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\4f73b7a4e550b26779209cdf29e24cb4\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\4f73b7a4e550b26779209cdf29e24cb4\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\4312827cd0a1ba482c10b8a15d1edf27\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\4312827cd0a1ba482c10b8a15d1edf27\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\5d6c48773e5e33a8bdc29ef243acb9f4\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\5d6c48773e5e33a8bdc29ef243acb9f4\AndroidManifest.xml:9:5-20
+MERGED from [com.github.nisrulz:screenshott:2.0.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\screenshott-2.0.0.aar\b34cd2d1997aa24b95fd285239dd0954\AndroidManifest.xml:27:5-28:19
+MERGED from [com.github.nisrulz:screenshott:2.0.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\screenshott-2.0.0.aar\b34cd2d1997aa24b95fd285239dd0954\AndroidManifest.xml:27:5-28:19
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\e8cc8af40fb4b5cf7815fbcf4600ab59\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\e8cc8af40fb4b5cf7815fbcf4600ab59\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\a9655d37ec82654a029f02793e557d22\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\a9655d37ec82654a029f02793e557d22\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\9eaac6a0c245c7db782bd8f7a3c348c3\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\9eaac6a0c245c7db782bd8f7a3c348c3\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\e039a112535f704a4311b072ba1866ec\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\e039a112535f704a4311b072ba1866ec\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\77b349e9f806f2ece9c59c424f0ed02a\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\77b349e9f806f2ece9c59c424f0ed02a\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\4db37f3800b4e193b3f4352543663b34\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\4db37f3800b4e193b3f4352543663b34\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\815585af6828ea7746eb511519b2aa17\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\815585af6828ea7746eb511519b2aa17\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\435f14d608885b81be10b7640dd8e541\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\435f14d608885b81be10b7640dd8e541\AndroidManifest.xml:25:5-29:19
 	android:supportsRtl
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:18:9-35
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:18:9-35
+	android:label
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:16:9-41
 	android:hardwareAccelerated
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:14:9-43
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:14:9-43
 	android:roundIcon
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:17:9-54
-	android:allowBackup
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:12:9-35
-	android:icon
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:13:9-43
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:17:9-54
 	android:largeHeap
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:15:9-33
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:15:9-33
+	android:icon
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:13:9-43
+	android:allowBackup
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:19:9-40
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:19:9-40
 activity#com.example.android.softvisitingcardapp.activity.MainActivity
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:20:9-26:20
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:20:9-26:20
 	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:20:19-56
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:20:19-56
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:21:13-25:29
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:22:17-69
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:22:25-66
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:24:17-77
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:24:27-74
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:24:27-74
 activity#com.example.android.softvisitingcardapp.gallery.CardGalleryActivity
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:27:9-36:20
-	android:label
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:29:13-41
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:27:9-36:20
 	android:parentActivityName
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:30:13-64
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:30:13-64
+	android:label
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:29:13-41
 	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:28:13-56
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:28:13-56
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:33:13-35:58
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:33:13-35:58
 	android:value
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:35:17-55
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:35:17-55
 	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:34:17-63
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:34:17-63
 activity#com.example.android.softvisitingcardapp.people.LinkedPeopleActivity
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:37:9-46:20
-	android:label
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:39:13-42
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:37:9-46:20
 	android:parentActivityName
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:40:13-64
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:40:13-64
+	android:label
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:39:13-42
 	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:38:13-56
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:38:13-56
 activity#com.example.android.softvisitingcardapp.people.OtherUsersActivity
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:47:9-55:20
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:47:9-55:20
 	android:parentActivityName
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:49:13-70
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:49:13-70
 	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:48:13-54
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:48:13-54
 activity#com.example.android.softvisitingcardapp.activity.CreateActivity
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:56:9-65:20
-	android:label
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:58:13-40
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:56:9-65:20
 	android:parentActivityName
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:59:13-73
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:59:13-73
+	android:label
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:58:13-40
 	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:57:13-52
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:57:13-52
 activity#com.example.android.softvisitingcardapp.activity.AboutUsActivity
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:66:9-75:20
-	android:label
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:68:13-37
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:66:9-75:20
 	android:parentActivityName
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:69:13-64
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:69:13-64
+	android:label
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:68:13-37
 	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:67:13-53
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:67:13-53
 activity#com.example.android.softvisitingcardapp.activity.SelectDesignActivity
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:76:9-85:20
-	android:label
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:78:13-42
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:76:9-85:20
 	android:parentActivityName
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:79:13-64
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:79:13-64
+	android:label
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:78:13-42
 	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:77:13-58
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:77:13-58
 activity#com.example.android.softvisitingcardapp.activity.PreviewDesignActivity
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:86:9-95:20
-	android:label
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:88:13-43
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:86:9-95:20
 	android:parentActivityName
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:89:13-72
-	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:87:13-59
-activity#com.example.android.softvisitingcardapp.activity.TestActivity
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:96:9-59
-	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:96:19-56
-activity#com.example.android.softvisitingcardapp.activity.SignInActivity
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:97:9-61
-	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:97:19-58
-activity#com.example.android.softvisitingcardapp.activity.SignUpActivity
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:98:9-61
-	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:98:19-58
-activity#com.example.android.softvisitingcardapp.activity.HomeActivity
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:99:9-102:48
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:89:13-72
 	android:label
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:101:13-56
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:88:13-43
+	android:name
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:87:13-59
+activity#com.example.android.softvisitingcardapp.activity.TestActivity
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:96:9-59
+	android:name
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:96:19-56
+activity#com.example.android.softvisitingcardapp.activity.SignInActivity
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:97:9-61
+	android:name
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:97:19-58
+activity#com.example.android.softvisitingcardapp.activity.SignUpActivity
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:98:9-61
+	android:name
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:98:19-58
+activity#com.example.android.softvisitingcardapp.activity.HomeActivity
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:99:9-102:48
+	android:label
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:101:13-56
 	android:theme
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:102:13-45
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:102:13-45
 	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:100:13-50
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:100:13-50
 activity#com.example.android.softvisitingcardapp.activity.MyCardsActivity
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:103:9-62
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:103:9-62
 	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:103:19-59
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:103:19-59
 activity#com.example.android.softvisitingcardapp.activity.SharedCardsActivity
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:104:9-66
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:104:9-66
 	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:104:19-63
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:104:19-63
 activity#com.example.android.softvisitingcardapp.activity.CardDetailActivity
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:105:9-65
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:105:9-65
 	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:105:19-62
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:105:19-62
 activity#com.example.android.softvisitingcardapp.activity.SharedCardDetailActivity
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:106:9-71
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:106:9-71
 	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:106:19-68
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:106:19-68
 activity#com.example.android.softvisitingcardapp.activity.UpdateCardActivity
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:107:9-65
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:107:9-65
 	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:107:19-62
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:107:19-62
 activity#com.example.android.softvisitingcardapp.activity.DeleteCardActivity
-ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:108:9-74
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:108:9-74
 	android:name
-		ADDED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:108:19-62
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:108:19-62
 uses-sdk
-INJECTED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\abirs\.android\build-cache\4f521a401f7513244c634a9866a57cebc4c3d300\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:design:25.3.1] C:\Users\abirs\.android\build-cache\370a42e7d6ca7c3a003db3c70c59e14b020e8811\output\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\abirs\.android\build-cache\c7c6f2c1b5f4ac90917cfacda3d8e943d4594988\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\abirs\.android\build-cache\68bc75be3f56683774862665a00d3d111da1bf29\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\abirs\.android\build-cache\2ba97183450360f4d03bb8e49dce0232f368862c\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\abirs\.android\build-cache\f8615611323d4a490c95b741e61da942abca8cba\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:transition:25.3.1] C:\Users\abirs\.android\build-cache\226d4712170530062597f09acd52f939974484c4\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\abirs\.android\build-cache\33730318c85742770d8b5d928d035f54a0ef67e3\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\abirs\.android\build-cache\badb705784db88b67520f978bb3ed7c476264674\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\abirs\.android\build-cache\5723eb05ae87b1c4ee8216badc9e8857c24960e2\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\abirs\.android\build-cache\84ee104bb46e3780df6a1402098888e6d2aa980a\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\abirs\.android\build-cache\0358cd5838846219c9d23dcb8b0d779e7ca3998c\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\abirs\.android\build-cache\29e96fb85b252166046d2254c8e315a041b1b8aa\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\abirs\.android\build-cache\cb8b68eed6eebe4f7c6256b6c24af525d21f2095\output\AndroidManifest.xml:5:5-7:41
-MERGED from [com.orhanobut:logger:2.1.1] C:\Users\abirs\.android\build-cache\cb8797f1dd6969b389567cca4902db5021a1d9e1\output\AndroidManifest.xml:6:5-43
-MERGED from [com.github.nisrulz:screenshott:2.0.0] C:\Users\abirs\.android\build-cache\8e23df849576cb0b6eadd64fd91af7c27a8a7ed2\output\AndroidManifest.xml:23:5-25:41
+INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
+INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\c3b0562e70f94c82c7ddc1d77894e405\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\c3b0562e70f94c82c7ddc1d77894e405\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\a7b7d6a0b723972583a212a9b4ada4e6\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\a7b7d6a0b723972583a212a9b4ada4e6\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\49cb52d04320d33843c8c55fb42b07e1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\49cb52d04320d33843c8c55fb42b07e1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\4f73b7a4e550b26779209cdf29e24cb4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\4f73b7a4e550b26779209cdf29e24cb4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\4312827cd0a1ba482c10b8a15d1edf27\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\4312827cd0a1ba482c10b8a15d1edf27\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\5d6c48773e5e33a8bdc29ef243acb9f4\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\5d6c48773e5e33a8bdc29ef243acb9f4\AndroidManifest.xml:5:5-7:41
+MERGED from [com.orhanobut:logger:2.1.1] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\logger-2.1.1.aar\dac01429f4725015762f1349bea48828\AndroidManifest.xml:6:5-43
+MERGED from [com.orhanobut:logger:2.1.1] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\logger-2.1.1.aar\dac01429f4725015762f1349bea48828\AndroidManifest.xml:6:5-43
+MERGED from [com.github.nisrulz:screenshott:2.0.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\screenshott-2.0.0.aar\b34cd2d1997aa24b95fd285239dd0954\AndroidManifest.xml:23:5-25:41
+MERGED from [com.github.nisrulz:screenshott:2.0.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\screenshott-2.0.0.aar\b34cd2d1997aa24b95fd285239dd0954\AndroidManifest.xml:23:5-25:41
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\e8cc8af40fb4b5cf7815fbcf4600ab59\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\e8cc8af40fb4b5cf7815fbcf4600ab59\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\a9655d37ec82654a029f02793e557d22\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\a9655d37ec82654a029f02793e557d22\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\9eaac6a0c245c7db782bd8f7a3c348c3\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\9eaac6a0c245c7db782bd8f7a3c348c3\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\e039a112535f704a4311b072ba1866ec\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\e039a112535f704a4311b072ba1866ec\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\77b349e9f806f2ece9c59c424f0ed02a\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\77b349e9f806f2ece9c59c424f0ed02a\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\4db37f3800b4e193b3f4352543663b34\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\4db37f3800b4e193b3f4352543663b34\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\815585af6828ea7746eb511519b2aa17\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\815585af6828ea7746eb511519b2aa17\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\435f14d608885b81be10b7640dd8e541\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\435f14d608885b81be10b7640dd8e541\AndroidManifest.xml:21:5-23:58
+INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
+INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:25.3.1] C:\Users\abirs\.android\build-cache\370a42e7d6ca7c3a003db3c70c59e14b020e8811\output\AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\c3b0562e70f94c82c7ddc1d77894e405\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\abirs\Desktop\Arif_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:cardview-v7:25.3.1] C:\Users\abirs\.android\build-cache\4f521a401f7513244c634a9866a57cebc4c3d300\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:design:25.3.1] C:\Users\abirs\.android\build-cache\370a42e7d6ca7c3a003db3c70c59e14b020e8811\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\abirs\.android\build-cache\c7c6f2c1b5f4ac90917cfacda3d8e943d4594988\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\abirs\.android\build-cache\68bc75be3f56683774862665a00d3d111da1bf29\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\abirs\.android\build-cache\2ba97183450360f4d03bb8e49dce0232f368862c\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\abirs\.android\build-cache\f8615611323d4a490c95b741e61da942abca8cba\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:transition:25.3.1] C:\Users\abirs\.android\build-cache\226d4712170530062597f09acd52f939974484c4\output\AndroidManifest.xml:22:5-24:34
-MERGED from [com.android.support:support-v4:25.3.1] C:\Users\abirs\.android\build-cache\33730318c85742770d8b5d928d035f54a0ef67e3\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\abirs\.android\build-cache\badb705784db88b67520f978bb3ed7c476264674\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\abirs\.android\build-cache\5723eb05ae87b1c4ee8216badc9e8857c24960e2\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\abirs\.android\build-cache\84ee104bb46e3780df6a1402098888e6d2aa980a\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\abirs\.android\build-cache\0358cd5838846219c9d23dcb8b0d779e7ca3998c\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:support-compat:25.3.1] C:\Users\abirs\.android\build-cache\29e96fb85b252166046d2254c8e315a041b1b8aa\output\AndroidManifest.xml:25:5-27:34
+ADDED from [com.android.support:design:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\c3b0562e70f94c82c7ddc1d77894e405\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\a7b7d6a0b723972583a212a9b4ada4e6\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.4.0.aar\a7b7d6a0b723972583a212a9b4ada4e6\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\49cb52d04320d33843c8c55fb42b07e1\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:cardview-v7:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\cardview-v7-25.4.0.aar\49cb52d04320d33843c8c55fb42b07e1\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\4f73b7a4e550b26779209cdf29e24cb4\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\transition-25.4.0.aar\4f73b7a4e550b26779209cdf29e24cb4\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\4312827cd0a1ba482c10b8a15d1edf27\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-v4-25.4.0.aar\4312827cd0a1ba482c10b8a15d1edf27\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\e8cc8af40fb4b5cf7815fbcf4600ab59\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.4.0.aar\e8cc8af40fb4b5cf7815fbcf4600ab59\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\a9655d37ec82654a029f02793e557d22\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.4.0.aar\a9655d37ec82654a029f02793e557d22\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\9eaac6a0c245c7db782bd8f7a3c348c3\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-fragment-25.4.0.aar\9eaac6a0c245c7db782bd8f7a3c348c3\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\e039a112535f704a4311b072ba1866ec\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.4.0.aar\e039a112535f704a4311b072ba1866ec\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\77b349e9f806f2ece9c59c424f0ed02a\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.4.0.aar\77b349e9f806f2ece9c59c424f0ed02a\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\4db37f3800b4e193b3f4352543663b34\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.4.0.aar\4db37f3800b4e193b3f4352543663b34\AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\815585af6828ea7746eb511519b2aa17\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.4.0.aar\815585af6828ea7746eb511519b2aa17\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\435f14d608885b81be10b7640dd8e541\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-compat-25.4.0.aar\435f14d608885b81be10b7640dd8e541\AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:cardview-v7:25.3.1] C:\Users\abirs\.android\build-cache\4f521a401f7513244c634a9866a57cebc4c3d300\output\AndroidManifest.xml:24:9-31
+		ADDED from [com.android.support:design:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\c3b0562e70f94c82c7ddc1d77894e405\AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from [com.android.support:cardview-v7:25.3.1] C:\Users\abirs\.android\build-cache\4f521a401f7513244c634a9866a57cebc4c3d300\output\AndroidManifest.xml:23:9-47
+		ADDED from [com.android.support:design:25.4.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\design-25.4.0.aar\c3b0562e70f94c82c7ddc1d77894e405\AndroidManifest.xml:27:13-51
