@@ -6,8 +6,16 @@
             android:id="@+id/nav_home"
             android:title="Home" />
         <item
+        android:id="@+id/nav_brand"
+        android:title="Brand" />
+
+        <item
+            android:id="@+id/nav_brand_list"
+            android:title="All Brands" />
+        <item
             android:id="@+id/nav_profile"
             android:title="Profile" />
+
         <!--
         <item
             android:id="@+id/nav_messages"

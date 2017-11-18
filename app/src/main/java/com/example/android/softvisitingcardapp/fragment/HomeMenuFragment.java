@@ -35,7 +35,9 @@ public class HomeMenuFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         pref = getActivity().getPreferences(0);
-        getActivity().setTitle("Soft Visiting Card App");
+        getActivity().setTitle(R.string.title_activity_home);
+
+        /*
         // Find the Create menu card
         createCardView = (CardView) getActivity().findViewById(R.id.create_card_view);
         createCardView.setOnClickListener(new View.OnClickListener() {
@@ -79,6 +81,7 @@ public class HomeMenuFragment extends Fragment {
                 startActivity(menuIntent);
             }
         });
+        */
 
     }
 

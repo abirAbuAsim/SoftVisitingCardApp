@@ -38,8 +38,6 @@ public class PeopleFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        // get userEmail sent from LinkedPeopleActivity
-        userEmail = getInstance(getActivity()).getUser().getEmail();
 
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
@@ -48,7 +46,7 @@ public class PeopleFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        getActivity().setTitle("Linked People");
+        getActivity().setTitle("All Brands");
 
         recyclerViewUsers = (RecyclerView) view.findViewById(R.id.recyclerViewUsers);
         recyclerViewUsers.setHasFixedSize(true);

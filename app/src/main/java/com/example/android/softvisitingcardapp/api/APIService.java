@@ -5,6 +5,7 @@ package com.example.android.softvisitingcardapp.api;
 import com.example.android.softvisitingcardapp.ModelClass.CardSent;
 import com.example.android.softvisitingcardapp.ModelClass.ResponseModel;
 import com.example.android.softvisitingcardapp.gallery.Cards;
+import com.example.android.softvisitingcardapp.models.Brands;
 import com.example.android.softvisitingcardapp.models.MessageResponse;
 import com.example.android.softvisitingcardapp.models.Messages;
 import com.example.android.softvisitingcardapp.models.Result;
@@ -36,7 +37,46 @@ public interface APIService {
             @Field("email") String email,
             @Field("password") String password);
 
+    @FormUrlEncoded
+    @POST("login")
+    Call<Result> userLogin(
+            @Field("email") String email,
+            @Field("password") String password
+    );
 
+    @FormUrlEncoded
+    @POST("addbrand")
+    Call<Result> addBrandInfo(
+            @Field("brand_name") String brandName,
+            @Field("brand_details") String brandDetails
+    );
+
+    @GET("users")
+    Call<Users> getUsers();
+
+    @GET("brands")
+    Call<Brands> getBrands();
+
+    @FormUrlEncoded
+    @POST("update/{id}")
+    Call<Result> updateUser(
+            @Path("id") int id,
+            @Field("name") String name,
+            @Field("email") String email,
+            @Field("password") String password
+    );
+
+    //getting messages
+    @GET("messages/{id}")
+    Call<Messages> getMessages(@Path("id") int id);
+
+    @FormUrlEncoded
+    @POST("sendmessage")
+    Call<MessageResponse> sendMessage(
+            @Field("from") int from,
+            @Field("to") int to,
+            @Field("title") String title,
+            @Field("message") String message);
 
     @FormUrlEncoded
     @POST("cardcreate")
@@ -51,36 +91,6 @@ public interface APIService {
             @Field("background_image") String backgroundImage,
             @Field("logo_image") String logoImage,
             @Field("card_maker_email") String cardMakerEmail
-    );
-
-
-
-    @FormUrlEncoded
-    @POST("login")
-    Call<Result> userLogin(
-            @Field("email") String email,
-            @Field("password") String password
-    );
-
-
-    @GET("users")
-    Call<Users> getUsers();
-
-    @FormUrlEncoded
-    @POST("sendmessage")
-    Call<MessageResponse> sendMessage(
-            @Field("from") int from,
-            @Field("to") int to,
-            @Field("title") String title,
-            @Field("message") String message);
-
-    @FormUrlEncoded
-    @POST("update/{id}")
-    Call<Result> updateUser(
-            @Path("id") int id,
-            @Field("name") String name,
-            @Field("email") String email,
-            @Field("password") String password
     );
 
     @FormUrlEncoded
@@ -116,10 +126,6 @@ public interface APIService {
             @Field("sender_id") String senderEmail,
             @Field("receiver_id") String receiverEmail
     );
-
-    //getting messages
-    @GET("messages/{id}")
-    Call<Messages> getMessages(@Path("id") int id);
 
     // Gets the users who are linked with the user
     @GET("links/{email}")

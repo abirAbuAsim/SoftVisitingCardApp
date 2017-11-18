@@ -2,6 +2,7 @@ package com.example.android.softvisitingcardapp.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -15,6 +16,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.android.softvisitingcardapp.R;
+import com.example.android.softvisitingcardapp.fragment.BrandListFragment;
 import com.example.android.softvisitingcardapp.fragment.HomeMenuFragment;
 import com.example.android.softvisitingcardapp.fragment.MessageFragment;
 import com.example.android.softvisitingcardapp.fragment.ProfileFragment;
@@ -25,15 +27,19 @@ public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private TextView textViewName;
+    public static FloatingActionButton fab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        fab = findViewById(R.id.fab);
+        //fab.hide();
+
         setSupportActionBar(toolbar);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
@@ -76,6 +82,13 @@ public class HomeActivity extends AppCompatActivity
                 break;
             case R.id.nav_profile:
                 fragment = new ProfileFragment();
+                break;
+            case R.id.nav_brand:
+                fragment = new BrandFragment();
+                break;
+            case R.id.nav_brand_list:
+                fragment = new BrandListFragment();
+                //fragment.setArguments();
                 break;
             /*case R.id.nav_messages:
                 fragment = new MessageFragment();

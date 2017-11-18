@@ -12,7 +12,7 @@
         android:scaleType="centerCrop"/>
 
 
-<LinearLayout
+<!--<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -30,10 +30,15 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+            <View
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorPrimary"/>
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorPrimary" />
+                android:src="@color/colorWhite"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -41,9 +46,14 @@
                 android:layout_centerVertical="true"
                 android:fontFamily="sans-serif"
                 android:text="Create"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/colorBlack"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorPrimary"/>
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 
@@ -64,7 +74,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorPrimary" />
+                android:src="@color/colorWhite"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -72,9 +82,14 @@
                 android:layout_centerVertical="true"
                 android:fontFamily="sans-serif"
                 android:text="Card Gallery"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/colorBlack"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorPrimary"/>
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 
@@ -94,7 +109,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorPrimary" />
+                android:src="@color/colorWhite"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -102,9 +117,14 @@
                 android:layout_centerVertical="true"
                 android:fontFamily="sans-serif"
                 android:text="Linked People"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/colorBlack"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorPrimary"/>
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 
@@ -123,24 +143,31 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorPrimary" />
+                android:src="@color/colorWhite"/>
             <TextView
+                android:id="@+id/about_us_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:fontFamily="sans-serif"
                 android:text="About Us"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/colorBlack"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+            <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorPrimary"/>
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 
 
-</LinearLayout>
+</LinearLayout>-->
 
 </RelativeLayout>

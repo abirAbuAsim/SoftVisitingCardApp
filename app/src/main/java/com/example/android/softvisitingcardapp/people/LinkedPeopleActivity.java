@@ -14,8 +14,6 @@ public class LinkedPeopleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_linked_people);
 
-
-
         Fragment fragment = new PeopleFragment();
         FragmentTransaction ft = getFragmentManager().beginTransaction();
         ft.replace(R.id.fragment_frame,fragment);

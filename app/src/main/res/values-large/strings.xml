@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="confirm_delete">Do you really want to Delete this card?</string>
+    <string name="addBrand">Add Brand</string>
 </resources>

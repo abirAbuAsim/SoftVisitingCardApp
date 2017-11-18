@@ -16,10 +16,19 @@ public class Result {
     @SerializedName("user")
     private User user;
 
+    @SerializedName("brand")
+    private Brand brand;
+
     public Result(Boolean error, String message, User user) {
         this.error = error;
         this.message = message;
         this.user = user;
+    }
+
+    public Result(Boolean error, String message, Brand brand) {
+        this.error = error;
+        this.message = message;
+        this.brand = brand;
     }
 
     public Result(Boolean error, String message) {

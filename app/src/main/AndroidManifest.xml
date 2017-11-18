@@ -10,10 +10,10 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
         android:hardwareAccelerated="true"
-        android:largeHeap="true"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -105,7 +105,8 @@
         <activity android:name=".activity.CardDetailActivity" />
         <activity android:name=".activity.SharedCardDetailActivity" />
         <activity android:name=".activity.UpdateCardActivity" />
-        <activity android:name=".activity.DeleteCardActivity"></activity>
+        <activity android:name=".activity.DeleteCardActivity" />
+        <activity android:name=".activity.BrandListActivity"></activity>
     </application>
 
 </manifest>

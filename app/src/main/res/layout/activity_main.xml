@@ -46,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Sign Up"
+            android:text="@string/sign_up"
             android:textColor="#FFFFFF"
             android:background="@color/colorPrimary"/>
     </LinearLayout>
@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/imageView"
         android:layout_alignParentStart="true"
-        android:text="Soft Visiting Card"
+        android:text="@string/app_name"
         android:textAlignment="center"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
         android:layout_alignParentLeft="true" />

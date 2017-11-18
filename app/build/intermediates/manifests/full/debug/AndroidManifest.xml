@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="15"
-        android:targetSdkVersion="25" />
+        android:targetSdkVersion="26" />
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -114,10 +114,14 @@
         <activity android:name="com.example.android.softvisitingcardapp.activity.SharedCardDetailActivity" />
         <activity android:name="com.example.android.softvisitingcardapp.activity.UpdateCardActivity" />
         <activity android:name="com.example.android.softvisitingcardapp.activity.DeleteCardActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.activity.BrandListActivity" />
 
         <meta-data
             android:name="android.support.VERSION"
-            android:value="25.4.0" />
+            android:value="26.1.0" />
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
     </application>
 
 </manifest>

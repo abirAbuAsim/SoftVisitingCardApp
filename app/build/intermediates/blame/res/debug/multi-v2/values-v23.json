@@ -4,7 +4,7 @@
             "outputFile": "D:\\Abir\\Android_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Dot Net\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-25.4.0.aar\\49cb52d04320d33843c8c55fb42b07e1\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Dot Net\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-26.1.0.aar\\3c3c9b1cf1827e35fe760a290915f16a\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Dot Net\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\a7b7d6a0b723972583a212a9b4ada4e6\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Dot Net\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\86e8c9aa3827d4ea5411aed94b9dfb49\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

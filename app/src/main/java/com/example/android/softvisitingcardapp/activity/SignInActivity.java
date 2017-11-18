@@ -15,6 +15,8 @@ import com.example.android.softvisitingcardapp.api.APIService;
 import com.example.android.softvisitingcardapp.api.APIUrl;
 import com.example.android.softvisitingcardapp.helper.SharedPrefManager;
 import com.example.android.softvisitingcardapp.models.Result;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -47,6 +49,7 @@ public class SignInActivity extends AppCompatActivity implements View.OnClickLis
 
         String email = editTextEmail.getText().toString().trim();
         String password = editTextPassword.getText().toString().trim();
+
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(APIUrl.BASE_URL)
