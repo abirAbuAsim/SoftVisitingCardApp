@@ -16,9 +16,8 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.android.softvisitingcardapp.R;
-import com.example.android.softvisitingcardapp.fragment.BrandListFragment;
+import com.example.android.softvisitingcardapp.brand.BrandListFragment;
 import com.example.android.softvisitingcardapp.fragment.HomeMenuFragment;
-import com.example.android.softvisitingcardapp.fragment.MessageFragment;
 import com.example.android.softvisitingcardapp.fragment.ProfileFragment;
 import com.example.android.softvisitingcardapp.helper.SharedPrefManager;
 
@@ -28,14 +27,21 @@ public class HomeActivity extends AppCompatActivity
 
     private TextView textViewName;
     public static FloatingActionButton fab;
+    private String fragmentToTrigger;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         Toolbar toolbar = findViewById(R.id.toolbar);
-        fab = findViewById(R.id.fab);
-        //fab.hide();
+
+        Bundle extras = getIntent().getExtras();
+        if (extras != null)
+        {
+            fragmentToTrigger = extras.getString("fragmentToTrigger");
+        }
+
+
 
         setSupportActionBar(toolbar);
 
@@ -48,19 +54,26 @@ public class HomeActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-
         if (!SharedPrefManager.getInstance(this).isLoggedIn()) {
             finish();
             startActivity(new Intent(this, SignInActivity.class));
         }
 
-
         View headerView = navigationView.getHeaderView(0);
         textViewName = (TextView) headerView.findViewById(R.id.textViewName);
         textViewName.setText(SharedPrefManager.getInstance(this).getUser().getName());
 
-        //loading home fragment by default
-        displaySelectedScreen(R.id.nav_home);
+        if(fragmentToTrigger != null) {
+            switch (fragmentToTrigger){
+                case "BrandList":
+                    displaySelectedScreen(R.id.nav_brand_list);
+                    break;
+            }
+
+        } else{
+            //loading home fragment by default
+            displaySelectedScreen(R.id.nav_home);
+        }
     }
 
     @Override
@@ -80,19 +93,10 @@ public class HomeActivity extends AppCompatActivity
             case R.id.nav_home:
                 fragment = new HomeMenuFragment();
                 break;
-            case R.id.nav_profile:
-                fragment = new ProfileFragment();
-                break;
-            case R.id.nav_brand:
-                fragment = new BrandFragment();
-                break;
             case R.id.nav_brand_list:
                 fragment = new BrandListFragment();
                 //fragment.setArguments();
                 break;
-            /*case R.id.nav_messages:
-                fragment = new MessageFragment();
-                break;*/
             case R.id.nav_logout:
                 logout();
                 break;

@@ -2,4 +2,9 @@
 <resources>
     <string name="confirm_delete">Do you really want to Delete this card?</string>
     <string name="addBrand">Add Brand</string>
+    <string name="nav_menu_customer">Customer</string>
+    <string name="nav_menu_feature">feature</string>
+    <string name="nav_menu_supplier">Supplier</string>
+    <string name="nav_menu_stock_location">Stock Location</string>
+    <string name="return_button">Return</string>
 </resources>

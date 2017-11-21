@@ -61,60 +61,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".gallery.CardGalleryActivity" />
         </activity>
-        <activity
-            android:name="com.example.android.softvisitingcardapp.activity.CreateActivity"
-            android:label="Create Card"
-            android:parentActivityName="com.example.android.softvisitingcardapp.activity.PreviewDesignActivity" >
-
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.PreviewDesignActivity" />
-        </activity>
-        <activity
-            android:name="com.example.android.softvisitingcardapp.activity.AboutUsActivity"
-            android:label="About Us"
-            android:parentActivityName="com.example.android.softvisitingcardapp.activity.MainActivity" >
-
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MainActivity" />
-        </activity>
-        <activity
-            android:name="com.example.android.softvisitingcardapp.activity.SelectDesignActivity"
-            android:label="Select Design"
-            android:parentActivityName="com.example.android.softvisitingcardapp.activity.MainActivity" >
-
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MainActivity" />
-        </activity>
-        <activity
-            android:name="com.example.android.softvisitingcardapp.activity.PreviewDesignActivity"
-            android:label="Preview Design"
-            android:parentActivityName="com.example.android.softvisitingcardapp.activity.SelectDesignActivity" >
-
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.SelectDesignActivity" />
-        </activity>
-        <activity android:name="com.example.android.softvisitingcardapp.activity.TestActivity" />
         <activity android:name="com.example.android.softvisitingcardapp.activity.SignInActivity" />
         <activity android:name="com.example.android.softvisitingcardapp.activity.SignUpActivity" />
         <activity
             android:name="com.example.android.softvisitingcardapp.activity.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/HomeTheme" />
-        <activity android:name="com.example.android.softvisitingcardapp.activity.MyCardsActivity" />
-        <activity android:name="com.example.android.softvisitingcardapp.activity.SharedCardsActivity" />
-        <activity android:name="com.example.android.softvisitingcardapp.activity.CardDetailActivity" />
-        <activity android:name="com.example.android.softvisitingcardapp.activity.SharedCardDetailActivity" />
-        <activity android:name="com.example.android.softvisitingcardapp.activity.UpdateCardActivity" />
-        <activity android:name="com.example.android.softvisitingcardapp.activity.DeleteCardActivity" />
-        <activity android:name="com.example.android.softvisitingcardapp.activity.BrandListActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.brand.BrandListActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.brand.BrandActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.brand.BrandDetailActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.brand.BrandEditActivity" />
 
         <meta-data
             android:name="android.support.VERSION"

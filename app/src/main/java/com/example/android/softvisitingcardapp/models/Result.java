@@ -47,4 +47,8 @@ public class Result {
     public User getUser() {
         return user;
     }
+
+    public Brand getBrand() {
+        return brand;
+    }
 }

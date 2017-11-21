@@ -4,17 +4,38 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
+            android:icon="@drawable/address"
             android:title="Home" />
-        <item
-        android:id="@+id/nav_brand"
-        android:title="Brand" />
 
         <item
             android:id="@+id/nav_brand_list"
-            android:title="All Brands" />
+            android:icon="@drawable/address"
+            android:title="Brands" />
+
         <item
-            android:id="@+id/nav_profile"
-            android:title="Profile" />
+            android:id="@+id/nav_category"
+            android:icon="@drawable/address"
+            android:title="@string/nav_menu_category" />
+
+        <item
+            android:id="@+id/nav_customer"
+            android:icon="@drawable/address"
+            android:title="@string/nav_menu_customer" />
+
+        <item
+            android:id="@+id/nav_feature"
+            android:icon="@drawable/address"
+            android:title="@string/nav_menu_feature" />
+
+        <item
+            android:id="@+id/nav_supplier"
+            android:icon="@drawable/address"
+            android:title="@string/nav_menu_supplier" />
+
+        <item
+            android:id="@+id/nav_stock_location"
+            android:icon="@drawable/address"
+            android:title="@string/nav_menu_stock_location" />
 
         <!--
         <item
@@ -23,6 +44,7 @@
             -->
         <item
             android:id="@+id/nav_logout"
+            android:icon="@drawable/address"
             android:title="Logout" />
     </group>
 

@@ -53,60 +53,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".gallery.CardGalleryActivity" />
         </activity>
-        <activity
-            android:name=".activity.CreateActivity"
-            android:label="Create Card"
-            android:parentActivityName=".activity.PreviewDesignActivity">
-
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.PreviewDesignActivity" />
-        </activity>
-        <activity
-            android:name=".activity.AboutUsActivity"
-            android:label="About Us"
-            android:parentActivityName=".activity.MainActivity">
-
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MainActivity" />
-        </activity>
-        <activity
-            android:name=".activity.SelectDesignActivity"
-            android:label="Select Design"
-            android:parentActivityName=".activity.MainActivity">
-
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MainActivity" />
-        </activity>
-        <activity
-            android:name=".activity.PreviewDesignActivity"
-            android:label="Preview Design"
-            android:parentActivityName=".activity.SelectDesignActivity">
-
-            <!-- Parent activity meta-data to support 4.0 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.SelectDesignActivity" />
-        </activity>
-        <activity android:name=".activity.TestActivity" />
         <activity android:name=".activity.SignInActivity" />
         <activity android:name=".activity.SignUpActivity" />
         <activity
             android:name=".activity.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/HomeTheme" />
-        <activity android:name=".activity.MyCardsActivity" />
-        <activity android:name=".activity.SharedCardsActivity" />
-        <activity android:name=".activity.CardDetailActivity" />
-        <activity android:name=".activity.SharedCardDetailActivity" />
-        <activity android:name=".activity.UpdateCardActivity" />
-        <activity android:name=".activity.DeleteCardActivity" />
-        <activity android:name=".activity.BrandListActivity"></activity>
+        <activity android:name=".brand.BrandListActivity" />
+        <activity android:name=".brand.BrandActivity" />
+        <activity android:name=".brand.BrandDetailActivity" />
+        <activity android:name=".brand.BrandEditActivity"></activity>
     </application>
 
 </manifest>

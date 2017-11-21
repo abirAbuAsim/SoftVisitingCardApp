@@ -1,10 +1,5 @@
 package com.example.android.softvisitingcardapp.api;
 
-
-
-import com.example.android.softvisitingcardapp.ModelClass.CardSent;
-import com.example.android.softvisitingcardapp.ModelClass.ResponseModel;
-import com.example.android.softvisitingcardapp.gallery.Cards;
 import com.example.android.softvisitingcardapp.models.Brands;
 import com.example.android.softvisitingcardapp.models.MessageResponse;
 import com.example.android.softvisitingcardapp.models.Messages;
@@ -51,6 +46,20 @@ public interface APIService {
             @Field("brand_details") String brandDetails
     );
 
+    @FormUrlEncoded
+    @POST("editbrand")
+    Call<Result> editBrand(
+            @Field("brand_id") int id,
+            @Field("brand_name") String name,
+            @Field("brand_details") String details
+    );
+
+    @FormUrlEncoded
+    @POST("deletebrand")
+    Call<Result> deleteBrand(
+            @Field("brand_id") int id
+    );
+
     @GET("users")
     Call<Users> getUsers();
 
@@ -65,100 +74,4 @@ public interface APIService {
             @Field("email") String email,
             @Field("password") String password
     );
-
-    //getting messages
-    @GET("messages/{id}")
-    Call<Messages> getMessages(@Path("id") int id);
-
-    @FormUrlEncoded
-    @POST("sendmessage")
-    Call<MessageResponse> sendMessage(
-            @Field("from") int from,
-            @Field("to") int to,
-            @Field("title") String title,
-            @Field("message") String message);
-
-    @FormUrlEncoded
-    @POST("cardcreate")
-    Call<Result> createCard(
-            @Field("name") String name,
-            @Field("email") String email,
-            @Field("designation") String designation,
-            @Field("contact") String contact,
-            @Field("website") String website,
-            @Field("address") String address,
-            @Field("organization") String organization,
-            @Field("background_image") String backgroundImage,
-            @Field("logo_image") String logoImage,
-            @Field("card_maker_email") String cardMakerEmail
-    );
-
-    @FormUrlEncoded
-    @POST("updatecard/{id}")
-    Call<Result> updateCard(
-            @Path("id") int id,
-            @Field("name") String name,
-            @Field("email") String email,
-            @Field("designation") String designation,
-            @Field("contact") String contact,
-            @Field("website") String website,
-            @Field("address") String address,
-            @Field("organization") String organization
-    );
-
-    @FormUrlEncoded
-    @POST("deletecard")
-    Call<Result> deleteCard(
-            @Field("id") int id
-    );
-
-    @FormUrlEncoded
-    @POST("removelinkeduser")
-    Call<Result> removeLinkedUser(
-            @Field("sender_id") String senderEmail,
-            @Field("receiver_id") String receiverEmail
-    );
-
-    @FormUrlEncoded
-    @POST("removesharedcard/{id}")
-    Call<Result> removeSharedCard(
-            @Path("id") int id,
-            @Field("sender_id") String senderEmail,
-            @Field("receiver_id") String receiverEmail
-    );
-
-    // Gets the users who are linked with the user
-    @GET("links/{email}")
-    Call<Users> getLinks(@Path("email") String email);
-
-    // get all the app users except the user him/her self
-    @GET("users/{email}")
-    Call<Users> getOtherUsers(@Path("email") String email);
-
-    @GET("cards")
-    Call<Cards> getCards();
-
-    // Gets the cards which the user has created
-    @GET("cards/{email}")
-    Call<Cards> getAllMyCards(@Path("email") String email);
-
-    // Gets the cards which the user has created
-    @GET("sharedcards/{email}")
-    Call<Cards> getSharedCards(@Path("email") String email);
-
-    @FormUrlEncoded
-    @POST("sendcard")
-    Call<MessageResponse> sendCard(
-            @Field("sender_id") String senderId,
-            @Field("receiver_id") String receiverId,
-            @Field("card_id") int cardId);
-
-    @Multipart
-    @POST("file_upload_api/card_create.php")
-    Call<ResponseModel> fileUpload(
-            @Part("sender_information") RequestBody description,
-            @Part MultipartBody.Part file);
-
-    @GET("/file_upload_api/display_card_data.php")
-    Call<List<CardSent>> loadCards();
 }
