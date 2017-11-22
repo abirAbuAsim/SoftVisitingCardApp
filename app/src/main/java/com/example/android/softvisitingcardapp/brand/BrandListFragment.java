@@ -36,11 +36,9 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class BrandListFragment extends Fragment {
 
-    private RecyclerView recyclerViewUsers;
+    private RecyclerView recyclerViewItems;
     private RecyclerView.Adapter adapter;
     private SwipeRefreshLayout mSwipeRefreshLayout;
-    public static String userEmail;
-    public static int cardId;
 
     public BrandListFragment() {
         // Required empty public constructor
@@ -58,9 +56,9 @@ public class BrandListFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         getActivity().setTitle("All Brands");
 
-        recyclerViewUsers = (RecyclerView) view.findViewById(R.id.recyclerViewUsers);
-        recyclerViewUsers.setHasFixedSize(true);
-        recyclerViewUsers.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerViewItems = (RecyclerView) view.findViewById(R.id.recyclerViewItems);
+        recyclerViewItems.setHasFixedSize(true);
+        recyclerViewItems.setLayoutManager(new LinearLayoutManager(getActivity()));
 
         mSwipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.fragment_home_swipe_refresh_layout);
 
@@ -84,7 +82,7 @@ public class BrandListFragment extends Fragment {
             }
         });
 
-        recyclerViewUsers.addOnScrollListener(new RecyclerView.OnScrollListener(){
+        recyclerViewItems.addOnScrollListener(new RecyclerView.OnScrollListener(){
             @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy){
                 if (dy > 0 ||dy<0 && fab.isShown())
@@ -118,7 +116,7 @@ public class BrandListFragment extends Fragment {
             @Override
             public void onResponse(Call<Brands> call, Response<Brands> response) {
                 adapter = new BrandAdapter(response.body().getBrands(), getActivity());
-                recyclerViewUsers.setAdapter(adapter);
+                recyclerViewItems.setAdapter(adapter);
             }
 
             @Override

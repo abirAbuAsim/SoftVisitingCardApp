@@ -4,7 +4,7 @@
             "outputFile": "D:\\Abir\\Android_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v17\\values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Dot Net\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\86e8c9aa3827d4ea5411aed94b9dfb49\\res\\values-v17\\values-v17.xml",
+                    "source": "C:\\Users\\Dot Net\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\1e2f377b6b9249347c6331b433628205\\res\\values-v17\\values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,26,29,32,35,39,42,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",

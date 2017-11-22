@@ -1,6 +1,7 @@
 package com.example.android.softvisitingcardapp.api;
 
 import com.example.android.softvisitingcardapp.models.Brands;
+import com.example.android.softvisitingcardapp.models.Categories;
 import com.example.android.softvisitingcardapp.models.MessageResponse;
 import com.example.android.softvisitingcardapp.models.Messages;
 import com.example.android.softvisitingcardapp.models.Result;
@@ -39,6 +40,9 @@ public interface APIService {
             @Field("password") String password
     );
 
+    /*
+        --> Start: brand
+     */
     @FormUrlEncoded
     @POST("addbrand")
     Call<Result> addBrandInfo(
@@ -60,11 +64,47 @@ public interface APIService {
             @Field("brand_id") int id
     );
 
+    @GET("brands")
+    Call<Brands> getBrands();
+
+    /*
+        End: brand <--
+    */
+
+    /*
+        --> Start: category
+    */
+    @FormUrlEncoded
+    @POST("addcategory")
+    Call<Result> addCategoryInfo(
+            @Field("category_name") String categoryName,
+            @Field("category_details") String categoryDetails
+    );
+
+    @FormUrlEncoded
+    @POST("editcategory")
+    Call<Result> editCategory(
+            @Field("category_id") int categoryId,
+            @Field("category_name") String categoryName,
+            @Field("category_details") String categoryDetails
+    );
+
+    @FormUrlEncoded
+    @POST("deletecategory")
+    Call<Result> deleteCategory(
+            @Field("category_id") int categoryId
+    );
+
+    @GET("categories")
+    Call<Categories> getAllCategories();
+
+    /*
+        End: category <--
+    */
+
     @GET("users")
     Call<Users> getUsers();
 
-    @GET("brands")
-    Call<Brands> getBrands();
 
     @FormUrlEncoded
     @POST("update/{id}")

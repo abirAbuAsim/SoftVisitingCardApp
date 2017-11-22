@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import com.example.android.softvisitingcardapp.R;
 import com.example.android.softvisitingcardapp.brand.BrandListFragment;
+import com.example.android.softvisitingcardapp.category.CategoryListFragment;
 import com.example.android.softvisitingcardapp.fragment.HomeMenuFragment;
 import com.example.android.softvisitingcardapp.fragment.ProfileFragment;
 import com.example.android.softvisitingcardapp.helper.SharedPrefManager;
@@ -26,7 +27,6 @@ public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private TextView textViewName;
-    public static FloatingActionButton fab;
     private String fragmentToTrigger;
 
     @Override
@@ -51,7 +51,7 @@ public class HomeActivity extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
         if (!SharedPrefManager.getInstance(this).isLoggedIn()) {
@@ -60,13 +60,16 @@ public class HomeActivity extends AppCompatActivity
         }
 
         View headerView = navigationView.getHeaderView(0);
-        textViewName = (TextView) headerView.findViewById(R.id.textViewName);
+        textViewName = headerView.findViewById(R.id.textViewName);
         textViewName.setText(SharedPrefManager.getInstance(this).getUser().getName());
 
         if(fragmentToTrigger != null) {
             switch (fragmentToTrigger){
                 case "BrandList":
                     displaySelectedScreen(R.id.nav_brand_list);
+                    break;
+                case "CategoryList":
+                    displaySelectedScreen(R.id.nav_category);
                     break;
             }
 
@@ -78,7 +81,7 @@ public class HomeActivity extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -95,7 +98,9 @@ public class HomeActivity extends AppCompatActivity
                 break;
             case R.id.nav_brand_list:
                 fragment = new BrandListFragment();
-                //fragment.setArguments();
+                break;
+            case R.id.nav_category:
+                fragment = new CategoryListFragment();
                 break;
             case R.id.nav_logout:
                 logout();
@@ -109,7 +114,7 @@ public class HomeActivity extends AppCompatActivity
             ft.commit();
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
     }
 

@@ -59,10 +59,12 @@
             android:name=".activity.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/HomeTheme" />
-        <activity android:name=".brand.BrandListActivity" />
         <activity android:name=".brand.BrandActivity" />
         <activity android:name=".brand.BrandDetailActivity" />
-        <activity android:name=".brand.BrandEditActivity"></activity>
+        <activity android:name=".brand.BrandEditActivity" />
+        <activity android:name=".category.CategoryAddActivity" />
+        <activity android:name=".category.CategoryDetailActivity" />
+        <activity android:name=".category.CategoryEditActivity"></activity>
     </application>
 
 </manifest>

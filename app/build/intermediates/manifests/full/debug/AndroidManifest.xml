@@ -67,10 +67,12 @@
             android:name="com.example.android.softvisitingcardapp.activity.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/HomeTheme" />
-        <activity android:name="com.example.android.softvisitingcardapp.brand.BrandListActivity" />
         <activity android:name="com.example.android.softvisitingcardapp.brand.BrandActivity" />
         <activity android:name="com.example.android.softvisitingcardapp.brand.BrandDetailActivity" />
         <activity android:name="com.example.android.softvisitingcardapp.brand.BrandEditActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.category.CategoryAddActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.category.CategoryDetailActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.category.CategoryEditActivity" />
 
         <meta-data
             android:name="android.support.VERSION"

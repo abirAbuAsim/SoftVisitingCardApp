@@ -6,33 +6,33 @@
                 {
                     "source": "D:\\Abir\\Android_projects\\SoftVisitingCardApp\\app\\src\\main\\res\\values-large\\strings.xml",
                     "from": {
-                        "startLines": "-1,-1,-1,-1,-1,-1,8",
-                        "startColumns": "-1,-1,-1,-1,-1,-1,4",
-                        "startOffsets": "-1,-1,-1,-1,-1,-1,423",
-                        "endColumns": "-1,-1,-1,-1,-1,-1,48",
-                        "endOffsets": "-1,-1,-1,-1,-1,-1,467"
+                        "startLines": "-1,9,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,4,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,473,-1,-1,-1,-1,-1,-1",
+                        "endColumns": "-1,59,-1,-1,-1,-1,-1,-1",
+                        "endOffsets": "-1,528,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
-                        "startLines": "9,10,11,12,13,14,15",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "532,579,662,717,770,837,892",
-                        "endColumns": "46,82,54,52,66,54,48",
-                        "endOffsets": "574,657,712,765,832,887,936"
+                        "startLines": "9,10,11,12,13,14,15,16",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "532,579,639,722,777,830,897,952",
+                        "endColumns": "46,59,82,54,52,66,54,48",
+                        "endOffsets": "574,634,717,772,825,892,947,996"
                     }
                 },
                 {
-                    "source": "C:\\Users\\Dot Net\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\86e8c9aa3827d4ea5411aed94b9dfb49\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\Dot Net\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\1e2f377b6b9249347c6331b433628205\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1",
                         "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1",
                         "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,8,16,17",
+                        "startLines": "2,3,4,5,6,7,8,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,114,185,256,326,396,464,941,1045",
+                        "startOffsets": "55,114,185,256,326,396,464,1001,1105",
                         "endColumns": "58,70,70,69,69,67,67,103,115",
-                        "endOffsets": "109,180,251,321,391,459,527,1040,1156"
+                        "endOffsets": "109,180,251,321,391,459,527,1100,1216"
                     }
                 }
             ]

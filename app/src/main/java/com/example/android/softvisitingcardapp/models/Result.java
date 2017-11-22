@@ -19,6 +19,9 @@ public class Result {
     @SerializedName("brand")
     private Brand brand;
 
+    @SerializedName("category")
+    private Category category;
+
     public Result(Boolean error, String message, User user) {
         this.error = error;
         this.message = message;
@@ -29,6 +32,12 @@ public class Result {
         this.error = error;
         this.message = message;
         this.brand = brand;
+    }
+
+    public Result(Boolean error, String message, Category category) {
+        this.error = error;
+        this.message = message;
+        this.category = category;
     }
 
     public Result(Boolean error, String message) {
@@ -50,5 +59,9 @@ public class Result {
 
     public Brand getBrand() {
         return brand;
+    }
+
+    public Category getCategory() {
+        return category;
     }
 }

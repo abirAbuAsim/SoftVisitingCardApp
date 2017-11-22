@@ -80,7 +80,7 @@ public class BrandEditActivity extends AppCompatActivity {
                     Toast.makeText(BrandEditActivity.this, "Details Edit successful", Toast.LENGTH_SHORT).show();
 
                     Intent intent = new Intent(BrandEditActivity.this, HomeActivity.class);
-                    intent.putExtra("fragmentToTrigger", "BrandList");
+                    intent.putExtra("fragmentToTrigger", "CategoryList");
                     startActivity(intent);
                 } else {
                     Toast.makeText(BrandEditActivity.this, "Something went wrong", Toast.LENGTH_LONG).show();
