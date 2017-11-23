@@ -2,6 +2,7 @@ package com.example.android.softvisitingcardapp.api;
 
 import com.example.android.softvisitingcardapp.models.Brands;
 import com.example.android.softvisitingcardapp.models.Categories;
+import com.example.android.softvisitingcardapp.models.Features;
 import com.example.android.softvisitingcardapp.models.MessageResponse;
 import com.example.android.softvisitingcardapp.models.Messages;
 import com.example.android.softvisitingcardapp.models.Result;
@@ -100,6 +101,59 @@ public interface APIService {
 
     /*
         End: category <--
+    */
+
+    /*
+       --> Start: feature
+   */
+    @FormUrlEncoded
+    @POST("addfeature")
+    Call<Result> addFeatureInfo(
+            @Field("feature_name") String featureName,
+            @Field("feature_ram") String featureRam,
+            @Field("feature_rom") String featureRom,
+            @Field("feature_processor") String featureProcessor,
+            @Field("feature_os") String featureOs,
+            @Field("feature_front_camera") String featureFrontCamera,
+            @Field("feature_back_camera") String featureBackCamera,
+            @Field("feature_battery") String featureBattery,
+            @Field("feature_cpu") String featureCpu,
+            @Field("feature_gpu") String featureGpu,
+            @Field("feature_sim") String featureSim,
+            @Field("feature_screen") String featureScreen,
+            @Field("feature_warranty") String featureWarranty
+    );
+
+    @FormUrlEncoded
+    @POST("editfeature")
+    Call<Result> editFeature(
+            @Field("feature_id") int featureId,
+            @Field("feature_name") String featureName,
+            @Field("feature_ram") String featureRam,
+            @Field("feature_rom") String featureRom,
+            @Field("feature_processor") String featureProcessor,
+            @Field("feature_os") String featureOs,
+            @Field("feature_front_camera") String featureFrontCamera,
+            @Field("feature_back_camera") String featureBackCamera,
+            @Field("feature_battery") String featureBattery,
+            @Field("feature_cpu") String featureCpu,
+            @Field("feature_gpu") String featureGpu,
+            @Field("feature_sim") String featureSim,
+            @Field("feature_screen") String featureScreen,
+            @Field("feature_warranty") String featureWarranty
+    );
+
+    @FormUrlEncoded
+    @POST("deletefeature")
+    Call<Result> deleteFeature(
+            @Field("feature_id") int featureId
+    );
+
+    @GET("features")
+    Call<Features> getAllFeatures();
+
+    /*
+        End: feature <--
     */
 
     @GET("users")

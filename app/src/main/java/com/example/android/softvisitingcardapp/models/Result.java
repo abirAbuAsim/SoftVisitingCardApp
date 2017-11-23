@@ -22,6 +22,9 @@ public class Result {
     @SerializedName("category")
     private Category category;
 
+    @SerializedName("feature")
+    private Feature feature;
+
     public Result(Boolean error, String message, User user) {
         this.error = error;
         this.message = message;
@@ -38,6 +41,12 @@ public class Result {
         this.error = error;
         this.message = message;
         this.category = category;
+    }
+
+    public Result(Boolean error, String message, Feature feature) {
+        this.error = error;
+        this.message = message;
+        this.feature = feature;
     }
 
     public Result(Boolean error, String message) {
@@ -63,5 +72,9 @@ public class Result {
 
     public Category getCategory() {
         return category;
+    }
+
+    public Feature getFeature() {
+        return feature;
     }
 }

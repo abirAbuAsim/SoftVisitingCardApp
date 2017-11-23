@@ -64,7 +64,10 @@
         <activity android:name=".brand.BrandEditActivity" />
         <activity android:name=".category.CategoryAddActivity" />
         <activity android:name=".category.CategoryDetailActivity" />
-        <activity android:name=".category.CategoryEditActivity"></activity>
+        <activity android:name=".category.CategoryEditActivity" />
+        <activity android:name=".feature.FeatureAddActivity" />
+        <activity android:name=".feature.FeatureEditActivity" />
+        <activity android:name=".feature.FeatureDetailActivity"></activity>
     </application>
 
 </manifest>

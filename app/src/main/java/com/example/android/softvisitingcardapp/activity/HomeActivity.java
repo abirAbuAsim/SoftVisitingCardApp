@@ -18,6 +18,7 @@ import android.widget.TextView;
 import com.example.android.softvisitingcardapp.R;
 import com.example.android.softvisitingcardapp.brand.BrandListFragment;
 import com.example.android.softvisitingcardapp.category.CategoryListFragment;
+import com.example.android.softvisitingcardapp.feature.FeatureListFragment;
 import com.example.android.softvisitingcardapp.fragment.HomeMenuFragment;
 import com.example.android.softvisitingcardapp.fragment.ProfileFragment;
 import com.example.android.softvisitingcardapp.helper.SharedPrefManager;
@@ -71,6 +72,9 @@ public class HomeActivity extends AppCompatActivity
                 case "CategoryList":
                     displaySelectedScreen(R.id.nav_category);
                     break;
+                case "FeatureList":
+                    displaySelectedScreen(R.id.nav_feature);
+                    break;
             }
 
         } else{
@@ -101,6 +105,9 @@ public class HomeActivity extends AppCompatActivity
                 break;
             case R.id.nav_category:
                 fragment = new CategoryListFragment();
+                break;
+            case R.id.nav_feature:
+                fragment = new FeatureListFragment();
                 break;
             case R.id.nav_logout:
                 logout();

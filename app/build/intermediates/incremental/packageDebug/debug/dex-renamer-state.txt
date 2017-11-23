@@ -1,4 +1,4 @@
-#Wed Nov 22 14:51:31 BDT 2017
+#Wed Nov 22 19:11:26 BDT 2017
 base.0=D\:\\Abir\\Android_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

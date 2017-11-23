@@ -25,4 +25,19 @@
     <string name="add_category_name_hint">Enter Category Name</string>
     <string name="add_category_details_hint">Enter Category Details</string>
     <string name="addCategoryButton">Add Category</string>
+    <string name="add_feature_name_hint">Enter name of the model</string>
+    <string name="add_feature_ram_hint">Enter RAM</string>
+    <string name="add_feature_rom_hint">Enter ROM</string>
+    <string name="add_feature_processor_hint">Enter Processor</string>
+    <string name="add_feature_os_hint">Enter Operating System</string>
+    <string name="add_feature_front_camera_hint">Enter Front Camera pixels</string>
+    <string name="add_feature_back_camera_hint">Enter Back Camera Pixels</string>
+    <string name="add_feature_battery_hint">Enter Battery size</string>
+    <string name="add_feature_cpu_hint">Enter CPU</string>
+    <string name="add_feature_gpu_hint">Enter GPU</string>
+    <string name="add_feature_sim_hint">Enter Sim support (Dual or Single)</string>
+    <string name="add_feature_screen_hint">Enter Screen Size</string>
+    <string name="add_feature_warranty_hint">Enter Warranty information</string>
+    <string name="addFeatureButton">Update</string>
+    <string name="editFeatureButton">Update</string>
 </resources>
