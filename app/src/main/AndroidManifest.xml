@@ -67,7 +67,10 @@
         <activity android:name=".category.CategoryEditActivity" />
         <activity android:name=".feature.FeatureAddActivity" />
         <activity android:name=".feature.FeatureEditActivity" />
-        <activity android:name=".feature.FeatureDetailActivity"></activity>
+        <activity android:name=".feature.FeatureDetailActivity" />
+        <activity android:name=".supplier.SupplierAddActivity" />
+        <activity android:name=".supplier.SupplierEditActivity" />
+        <activity android:name=".supplier.SupplierDetailActivity"></activity>
     </application>
 
 </manifest>

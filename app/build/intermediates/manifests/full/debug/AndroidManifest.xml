@@ -23,6 +23,7 @@
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.example.android.softvisitingcardapp.activity.MainActivity" >
             <intent-filter>
@@ -75,6 +76,9 @@
         <activity android:name="com.example.android.softvisitingcardapp.feature.FeatureAddActivity" />
         <activity android:name="com.example.android.softvisitingcardapp.feature.FeatureEditActivity" />
         <activity android:name="com.example.android.softvisitingcardapp.feature.FeatureDetailActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.supplier.SupplierAddActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.supplier.SupplierEditActivity" />
+        <activity android:name="com.example.android.softvisitingcardapp.supplier.SupplierDetailActivity" />
 
         <meta-data
             android:name="android.support.VERSION"

@@ -25,10 +25,23 @@ public class Result {
     @SerializedName("feature")
     private Feature feature;
 
+    @SerializedName("supplier")
+    private Supplier supplier;
+
+    public Supplier getSupplier() {
+        return supplier;
+    }
+
     public Result(Boolean error, String message, User user) {
         this.error = error;
         this.message = message;
         this.user = user;
+    }
+
+    public Result(Boolean error, String message, Supplier supplier) {
+        this.error = error;
+        this.message = message;
+        this.supplier = supplier;
     }
 
     public Result(Boolean error, String message, Brand brand) {

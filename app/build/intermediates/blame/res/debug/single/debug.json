@@ -368,6 +368,10 @@
         "source": "C:\\Users\\Dot Net\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\eac466f527cc9dcce848e28dadcfe8cc\\res\\drawable\\notification_bg_low.xml"
     },
     {
+        "merged": "D:\\Abir\\Android_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_suppliers.xml.flat",
+        "source": "D:\\Abir\\Android_projects\\SoftVisitingCardApp\\app\\src\\main\\res\\layout\\list_suppliers.xml"
+    },
+    {
         "merged": "D:\\Abir\\Android_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_email.png.flat",
         "source": "D:\\Abir\\Android_projects\\SoftVisitingCardApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_email.png"
     },
@@ -1144,6 +1148,10 @@
         "source": "C:\\Users\\Dot Net\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\1e2f377b6b9249347c6331b433628205\\res\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "D:\\Abir\\Android_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_supplier_add.xml.flat",
+        "source": "D:\\Abir\\Android_projects\\SoftVisitingCardApp\\app\\src\\main\\res\\layout\\activity_supplier_add.xml"
+    },
+    {
         "merged": "D:\\Abir\\Android_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v26_abc_screen_toolbar.xml.flat",
         "source": "C:\\Users\\Dot Net\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\1e2f377b6b9249347c6331b433628205\\res\\layout-v26\\abc_screen_toolbar.xml"
     },
@@ -1412,6 +1420,10 @@
         "source": "C:\\Users\\Dot Net\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\1e2f377b6b9249347c6331b433628205\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "D:\\Abir\\Android_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_supplier_detail.xml.flat",
+        "source": "D:\\Abir\\Android_projects\\SoftVisitingCardApp\\app\\src\\main\\res\\layout\\activity_supplier_detail.xml"
+    },
+    {
         "merged": "D:\\Abir\\Android_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\Dot Net\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\1e2f377b6b9249347c6331b433628205\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
@@ -1610,6 +1622,10 @@
     {
         "merged": "D:\\Abir\\Android_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Dot Net\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\1e2f377b6b9249347c6331b433628205\\res\\drawable-xxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Abir\\Android_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_supplier_edit.xml.flat",
+        "source": "D:\\Abir\\Android_projects\\SoftVisitingCardApp\\app\\src\\main\\res\\layout\\activity_supplier_edit.xml"
     },
     {
         "merged": "D:\\Abir\\Android_projects\\SoftVisitingCardApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",

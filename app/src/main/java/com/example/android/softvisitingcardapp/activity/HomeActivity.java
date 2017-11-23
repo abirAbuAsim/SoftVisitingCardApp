@@ -22,6 +22,7 @@ import com.example.android.softvisitingcardapp.feature.FeatureListFragment;
 import com.example.android.softvisitingcardapp.fragment.HomeMenuFragment;
 import com.example.android.softvisitingcardapp.fragment.ProfileFragment;
 import com.example.android.softvisitingcardapp.helper.SharedPrefManager;
+import com.example.android.softvisitingcardapp.supplier.SupplierListFragment;
 
 
 public class HomeActivity extends AppCompatActivity
@@ -66,6 +67,9 @@ public class HomeActivity extends AppCompatActivity
 
         if(fragmentToTrigger != null) {
             switch (fragmentToTrigger){
+                case "SupplierList":
+                    displaySelectedScreen(R.id.nav_supplier);
+                    break;
                 case "BrandList":
                     displaySelectedScreen(R.id.nav_brand_list);
                     break;
@@ -99,6 +103,9 @@ public class HomeActivity extends AppCompatActivity
         switch (itemId) {
             case R.id.nav_home:
                 fragment = new HomeMenuFragment();
+                break;
+            case R.id.nav_supplier:
+                fragment = new SupplierListFragment();
                 break;
             case R.id.nav_brand_list:
                 fragment = new BrandListFragment();

@@ -40,4 +40,13 @@
     <string name="add_feature_warranty_hint">Enter Warranty information</string>
     <string name="addFeatureButton">Update</string>
     <string name="editFeatureButton">Update</string>
+    <string name="add_supplier_name_hint">Enter Supplier Name</string>
+    <string name="add_supplier_address_hint">Enter Address</string>
+    <string name="add_supplier_phone_number_hint">Enter Phone number</string>
+    <string name="add_supplier_company_name_hint">Enter Company Name</string>
+    <string name="editCategoryButton">Update</string>
+    <string name="supplier_name_text_view">Supplier name</string>
+    <string name="supplier_address_text_view">Supplier Address</string>
+    <string name="supplier_phone_number_text_view">Supplier phone number</string>
+    <string name="supplier_company_name_text_view">Supplier company name</string>
 </resources>

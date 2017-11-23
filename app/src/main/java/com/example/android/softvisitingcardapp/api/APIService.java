@@ -6,6 +6,7 @@ import com.example.android.softvisitingcardapp.models.Features;
 import com.example.android.softvisitingcardapp.models.MessageResponse;
 import com.example.android.softvisitingcardapp.models.Messages;
 import com.example.android.softvisitingcardapp.models.Result;
+import com.example.android.softvisitingcardapp.models.Suppliers;
 import com.example.android.softvisitingcardapp.models.Users;
 
 import java.util.List;
@@ -67,6 +68,41 @@ public interface APIService {
 
     @GET("brands")
     Call<Brands> getBrands();
+
+    /*
+        --> Start: supplier
+    */
+    @FormUrlEncoded
+    @POST("addsupplier")
+    Call<Result> addSupplier(
+            @Field("supplier_name") String supplierName,
+            @Field("supplier_address") String supplierAddress,
+            @Field("supplier_phone_no") String supplierPhoneNo,
+            @Field("supplier_company_name") String supplierCompanyName
+    );
+
+    @FormUrlEncoded
+    @POST("editsupplier")
+    Call<Result> editSupplier(
+            @Field("supplier_id") int supplierId,
+            @Field("supplier_name") String supplierName,
+            @Field("supplier_address") String supplierAddress,
+            @Field("supplier_phone_no") String supplierPhoneNo,
+            @Field("supplier_company_name") String supplierCompanyName
+    );
+
+    @FormUrlEncoded
+    @POST("suppliers")
+    Call<Result> deleteSupplier(
+            @Field("supplier_id") int supplierId
+    );
+
+    @GET("suppliers")
+    Call<Suppliers> getAllSuppliers();
+
+    /*
+        End: supplier <--
+    */
 
     /*
         End: brand <--

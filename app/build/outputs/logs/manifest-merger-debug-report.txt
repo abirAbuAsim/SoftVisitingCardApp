@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-73:12
-INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-73:12
-INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-73:12
-INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-73:12
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-76:12
+INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-76:12
+INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-76:12
+INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-76:12
 MERGED from [com.android.support:design:26.1.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\cc05e188324042594247624d6b024365\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\1e2f377b6b9249347c6331b433628205\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:cardview-v7:26.1.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\cardview-v7-26.1.0.aar\8a14d518c16db6b09ee708b050011153\AndroidManifest.xml:17:1-28:12
@@ -21,20 +21,20 @@ MERGED from [com.android.support:recyclerview-v7:26.1.0] C:\Users\Dot Net\.gradl
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\1d0585ba2b7fc0992521ed832e7aca94\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\eac466f527cc9dcce848e28dadcfe8cc\AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\8f045e18c942754f49f7f20892b26ab5\AndroidManifest.xml:17:1-30:12
-INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-73:12
-INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-73:12
-INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-73:12
+INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-76:12
+INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-76:12
+INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-76:12
 	package
 		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:3:5-54
 		INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
-		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-73:12
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-76:12
 		INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
-		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-73:12
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:1-76:12
 		INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:2:11-69
@@ -59,7 +59,7 @@ ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidMani
 	android:name
 		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:9:22-77
 application
-ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:11:5-71:19
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:11:5-74:19
 MERGED from [com.android.support:design:26.1.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\cc05e188324042594247624d6b024365\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\cc05e188324042594247624d6b024365\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Dot Net\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\1e2f377b6b9249347c6331b433628205\AndroidManifest.xml:25:5-29:19
@@ -199,9 +199,21 @@ ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidMani
 	android:name
 		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:69:19-62
 activity#com.example.android.softvisitingcardapp.feature.FeatureDetailActivity
-ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:70:9-76
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:70:9-67
 	android:name
 		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:70:19-64
+activity#com.example.android.softvisitingcardapp.supplier.SupplierAddActivity
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:71:9-66
+	android:name
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:71:19-63
+activity#com.example.android.softvisitingcardapp.supplier.SupplierEditActivity
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:72:9-67
+	android:name
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:72:19-64
+activity#com.example.android.softvisitingcardapp.supplier.SupplierDetailActivity
+ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:73:9-78
+	android:name
+		ADDED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml:73:19-66
 uses-sdk
 INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Abir\Android_projects\SoftVisitingCardApp\app\src\main\AndroidManifest.xml
