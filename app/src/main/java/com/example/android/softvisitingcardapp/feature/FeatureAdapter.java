@@ -120,7 +120,7 @@ public class FeatureAdapter extends RecyclerView.Adapter<FeatureAdapter.ViewHold
         holder.listTextContainerLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(mCtx, FeatureEditActivity.class);
+                Intent intent = new Intent(mCtx, FeatureDetailActivity.class);
                 intent.putExtra("featureId", feature.getId());
                 intent.putExtra("featureName", feature.getName());
                 intent.putExtra("featureRam", feature.getRam());

@@ -107,7 +107,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
         holder.listTextContainerLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(mCtx, CategoryEditActivity.class);
+                Intent intent = new Intent(mCtx, CategoryDetailActivity.class);
                 intent.putExtra("categoryId", category.getId());
                 intent.putExtra("categoryName", category.getName());
                 intent.putExtra("categoryDetails", category.getDetails());

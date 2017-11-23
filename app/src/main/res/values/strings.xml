@@ -17,7 +17,7 @@
     <string name="edit_brand">Edit brand</string>
     <string name="nav_menu_category">Category</string>
     <string name="nav_menu_customer">Customer</string>
-    <string name="nav_menu_feature">feature</string>
+    <string name="nav_menu_feature">Feature</string>
     <string name="nav_menu_supplier">Supplier</string>
     <string name="nav_menu_stock_location">Stock Location</string>
     <string name="return_button">Return</string>
@@ -49,4 +49,19 @@
     <string name="supplier_address_text_view">Supplier Address</string>
     <string name="supplier_phone_number_text_view">Supplier phone number</string>
     <string name="supplier_company_name_text_view">Supplier company name</string>
+    <string name="category_name_text_view">Category name</string>
+    <string name="category_details_text_view">Category Details</string>
+    <string name="feature_ram_text_view">RAM</string>
+    <string name="feature_name_text_view">Model Name:</string>
+    <string name="feature_rom_text_view">ROM:</string>
+    <string name="feature_processor_text_view">Processor</string>
+    <string name="feature_os_text_view">Operating System:</string>
+    <string name="feature_front_camera_text_view">Front Camera:</string>
+    <string name="feature_back_camera_text_view">Back Camera:</string>
+    <string name="feature_battery_text_view">Battery:</string>
+    <string name="feature_cpu_text_view">CPU</string>
+    <string name="feature_gpu_text_view">GPU</string>
+    <string name="feature_sim_text_view">Sim:</string>
+    <string name="feature_screen_text_view">Screen size:</string>
+    <string name="feature_warranty_text_view">Warranty details:</string>
 </resources>
